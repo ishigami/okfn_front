@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.prettierrc.cjs
+.eslintrc.cjs
+env.d.ts
+stylelint.config.cjs
+tailwind.config.cjs
+vite.config.js

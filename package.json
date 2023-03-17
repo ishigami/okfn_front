@@ -1,0 +1,33 @@
+{
+  "name": "okfn_front",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-import": "^2.27.5",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "prettier": "^2.8.4",
+    "stylelint": "^15.2.0",
+    "stylelint-config-standard": "^30.0.1",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-handlebars": "^1.6.0",
+    "vite-plugin-stylelint": "^4.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "jquery-modal": "^0.9.2",
+    "slick-carousel": "^1.8.1",
+    "uuid": "^9.0.0"
+  }
+}

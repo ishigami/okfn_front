@@ -1,0 +1,19 @@
+.sect {
+  @apply col-start-2 col-end-14;
+
+  &.-expand {
+    @apply col-start-1 col-end-15;
+  }
+
+  &.-tighten-1 {
+    @apply col-start-3 col-end-13;
+  }
+
+  &.-tighten-2 {
+    @apply col-start-4 col-end-12;
+  }
+
+  &__content {
+    @apply relative z-10;
+  }
+}

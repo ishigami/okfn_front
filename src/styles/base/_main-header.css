@@ -1,0 +1,40 @@
+.main-header {
+  @apply col-start-2 col-end-14 py-12;
+
+  nav {
+    @apply font-display;
+
+    ul {
+      @apply md:flex md:gap-x-3;
+    }
+
+    a {
+      @apply relative flex justify-center items-center min-h-[4.375rem] text-black border-2 border-black;
+
+      border-radius: 2.1875rem;
+
+      &.labeled {
+        @apply px-6;
+      }
+
+      &.icon {
+        @apply min-w-[4.375rem];
+      }
+
+      &:hover,
+      &.-active {
+        @apply border-transparent;
+
+        &::before {
+          content: '';
+
+          @apply absolute z-0 inset-0 bg-secondary blur-xl;
+        }
+      }
+
+      span {
+        @apply relative z-10;
+      }
+    }
+  }
+}

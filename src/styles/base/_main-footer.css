@@ -1,0 +1,31 @@
+.main-footer {
+  @apply py-12 bg-primary;
+
+  &__head {
+    @apply col-start-2 col-end-14;
+  }
+
+  &__nav {
+    @apply col-span-2 flex items-end gap-14 font-bold;
+
+    &:first-of-type {
+      @apply col-start-2;
+    }
+
+    ul {
+      @apply flex-1 w-40;
+    }
+
+    li {
+      @apply mb-4;
+
+      &:last-child {
+        @apply mb-0;
+      }
+    }
+  }
+
+  &__disclaimers {
+    @apply col-start-10 col-span-4;
+  }
+}
