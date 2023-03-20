@@ -15,6 +15,7 @@
 
 @import './components/_block-txt.css';
 @import './components/_slider.css';
+@import './components/_switcher.css';
 
 @import './components/_sect-highlights.css';
 @import './components/_feature-item.css';

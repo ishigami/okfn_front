@@ -1,39 +1,127 @@
 .main-header {
-  @apply col-start-2 col-end-14 py-12;
+  @apply relative z-[100] col-start-2 col-end-14 py-12;
+
+  .submenu {
+    @apply hidden absolute top-full left-1/2 px-14 pt-5 pb-10 font-display -translate-x-1/2 -translate-y-4 rounded-[3.75rem] whitespace-nowrap text-center font-bold;
+
+    &::before {
+      content: '';
+
+      @apply absolute inset-0 -top-[4.375rem]  z-0 bg-secondary blur-xl;
+    }
+
+    a {
+      @apply block py-3;
+    }
+
+    li {
+      @apply relative z-10;
+
+      ul {
+        @apply -mt-2;
+      }
+
+      li {
+        a {
+          @apply py-2 font-normal;
+        }
+      }
+    }
+  }
 
   nav {
     @apply font-display;
 
-    ul {
+    > ul {
       @apply md:flex md:gap-x-3;
-    }
 
-    a {
-      @apply relative flex justify-center items-center min-h-[4.375rem] text-black border-2 border-black;
+      > li {
+        @apply relative z-10;
 
-      border-radius: 2.1875rem;
+        > a,
+        > label {
+          @apply relative flex justify-center items-center min-h-[4.375rem] text-black border-2 border-black;
 
-      &.labeled {
-        @apply px-6;
-      }
+          border-radius: 2.1875rem;
 
-      &.icon {
-        @apply min-w-[4.375rem];
-      }
+          &.labeled {
+            @apply px-6;
+          }
 
-      &:hover,
-      &.-active {
-        @apply border-transparent;
+          &.icon {
+            @apply min-w-[4.375rem];
+          }
 
-        &::before {
-          content: '';
+          span {
+            @apply relative z-10;
+          }
+        }
 
-          @apply absolute z-0 inset-0 bg-secondary blur-xl;
+        &:hover {
+          @apply z-0;
+
+          .submenu {
+            @apply block;
+          }
+        }
+
+        &:hover,
+        &.-active {
+          > a,
+          > label {
+            @apply border-transparent;
+
+            &::before {
+              content: '';
+
+              @apply absolute z-0 inset-0 bg-secondary blur-xl;
+            }
+          }
         }
       }
+    }
 
-      span {
-        @apply relative z-10;
+    label {
+      @apply cursor-pointer;
+    }
+  }
+
+  .search {
+    .form {
+      @apply absolute top-full right-0 pt-3;
+
+      &-control {
+        @apply h-[3.125rem];
+      }
+    }
+
+    &__close {
+      @apply hidden w-4;
+    }
+
+    .input-fake {
+      @apply w-[28rem] pr-4 rounded-[2.1875rem] text-xl;
+    }
+
+    .switcher__indicator {
+      &:checked {
+        ~ .switcher__trigger {
+          @apply border-transparent;
+
+          &::before {
+            content: '';
+
+            @apply absolute z-0 inset-0 bg-secondary blur-xl;
+          }
+
+          .search__open {
+            @apply hidden;
+          }
+
+          .search__close {
+            @apply block;
+          }
+        }
       }
     }
   }
