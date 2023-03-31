@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&family=Hanken+Grotesk:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
-    <script type="module" crossorigin src="/okfn_front/assets/index-b0be11af.js"></script>
-    <link rel="stylesheet" href="/okfn_front/assets/index-5f17e865.css">
+    <script type="module" crossorigin src="/okfn_front/assets/index-35a5890b.js"></script>
+    <link rel="stylesheet" href="/okfn_front/assets/index-894dfe87.css">
   </head>
   <body>
     <div class="root">
@@ -19,11 +19,14 @@
         <header class="main-header mb-12">
           <div class="flex justify-between items-center">
             <a href="/" class="lg">
-              <img src="/okfn_front/images/lg-okfn.svg" class="h-[5.625rem]" alt="Open Knowledge Foundation">
+              <img src="/okfn_front/images/lg-okfn.svg" class="h-[4.375rem] md:h-[5.625rem]" alt="Open Knowledge Foundation">
             </a>
         
             <nav>
-              <ul>
+              <span class="md:hidden">
+                <img src="/okfn_front/images/icons/menu.svg" alt="Menu">
+              </span>
+              <ul class="hidden md:block">
                 <li>
                   <a href="" class="labeled">
                     <span>Who we are</span>
@@ -161,7 +164,7 @@
                     </div>
       </div>
       <div class="flex-grow">
-                    <h1 class="text-5xl_2 leading-tighten">
+                    <h1 class="text-h1 !leading-tight">
                       <strong>We are building a world open by design where all knowledge is</strong>
                       <span class="font-mono">accessible to everyone.</span>
                     </h1>
@@ -174,7 +177,7 @@
 <section class="sect sect-features -tighten-1 mb-20">
   <div class="sect__content">
 
-    <div class="grid grid-cols-3 gap-14 max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-14 max-w-6xl mx-auto">
                   <!-- feature-item -->
                   <a href="" class="feature-item -center">
                     <figure>
@@ -217,7 +220,7 @@
 <!-- /sect-features -->
         <section class="sect sect-highlights mb-24">
           <div class="sect__content">
-            <h2 class="mb-20 text-5xl_2 text-center font-bold leading-none">Open Knowledge in <br> practice</h2>
+            <h2 class="mb-20 text-h1 text-center font-bold leading-none">Open Knowledge in <br> practice</h2>
 
             <div class="flex flex-col gap-y-20">
               <a href="" class="highlight text-white">
@@ -262,9 +265,9 @@
 <!-- sect-features -->
 <section class="sect sect-features -tighten-1 mb-20">
   <div class="sect__content">
-                <h2 class="mb-20 text-5xl_2 text-center font-bold leading-none">Open Knowledge <br> data tools</h2>
+                <h2 class="mb-20 text-h1 text-center font-bold leading-none">Open Knowledge <br> data tools</h2>
 
-    <div class="grid grid-cols-3 gap-14 max-w-6xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-14 max-w-6xl mx-auto">
                   <!-- feature-item -->
                   <a href="" class="feature-item ">
                     <figure>
@@ -303,16 +306,16 @@
 </section>
 <!-- /sect-features -->
 <!-- hero -->
-<section class="sect sect-hero -tighten-1 -has-bg-circle -bg-circle-tertiary -bg-circle-lg mb-20">
+<section class="sect sect-hero -tighten-1 -has-bg-circle -bg-circle-okfn-purple -bg-circle-lg mb-20">
   <div class="sect__content">
     <div class="md:flex md:gap-x-8 md:items-center md:flex-row-reverse md:gap-x-28">
       <div class="flex-shrink-0">
-                    <div class="flex-shrink-0">
-                      <img src="/okfn_front/images/home-hero-global-movement.png" alt="Home Hero">
+                    <div class="flex-shrink-0 mb-8 md:mb-0">
+                      <img src="/okfn_front/images/home-hero-global-movement.png" class="mx-auto md:mx-0" alt="Home Hero">
                     </div>
       </div>
       <div class="flex-grow">
-                    <h2 class="mb-8 font-bold text-5xl_2 leading-none">Global <br> movement <br> in action</h2>
+                    <h2 class="mb-8 font-bold text-h1 leading-none">Global <br> movement <br> in action</h2>
                     <span class="block mb-16 text-2xl">Open Knowledge Foundation is part of a worldwide movement working together for a fair, free and open future.</span>
                     <a href="" class="btn">Join us!</a>
       </div>
@@ -323,7 +326,7 @@
 <!-- sect-generic -->
 <section class="sect sect-generic -tighten-1 mb-20 text-center">
   <div class="sect__content ">
-                <h3 class="py-6 mb-20 text-2xl">Open Knowledge established chapters</h3>
+                <h3 class="py-6 mb-20 text-2xl font-bold">Open Knowledge established chapters</h3>
     
                 <div class="grid grid-cols-2 md:grid-cols-5 items-center gap-x-2.5 gap-y-10 mb-20">
                   <a href="">
@@ -408,37 +411,37 @@
           </div>
         </section>
 
-        <section class="sect sect-updates -tighten-1 -has-bg-circle -bg-circle-quaternary before:-translate-x-1/2 before:-translate-y-1/2 mb-20">
+        <section class="sect sect-updates -tighten-1 -has-bg-circle -bg-circle-okfn-yellow before:-translate-x-1/2 before:-translate-y-1/2 mb-20">
           <div class="sect__content">
-            <h2 class="mb-8 font-bold text-5xl_2 leading-none">Latest <br> updates</h2>
+            <h2 class="mb-8 font-bold text-h1 leading-none">Latest <br> updates</h2>
 
-            <div class="grid grid-cols-3 gap-16">
-              <a href="" class="relative block px-8 pt-10 pb-32 bg-quaternary/25">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+              <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
                 <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
                 <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
                 <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
               </a>
-              <a href="" class="relative block px-8 pt-10 pb-32 bg-quaternary/25">
+              <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
                 <h3 class="title block mb-8 font-bold text-2xl"> Better together than alone: say hello again to the Open Knowledge Network </h3>
                 <p>Join the movement! Today we are launching two projects to shine a light on the tremendous work the Network has been doing in the past decade.</p>
                 <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
               </a>
-              <a href="" class="relative block px-8 pt-10 pb-32 bg-quaternary/25">
+              <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
                 <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
                 <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
                 <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
               </a>
-              <a href="" class="relative block px-8 pt-10 pb-32 bg-quaternary/25">
+              <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
                 <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
                 <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
                 <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
               </a>
-              <a href="" class="relative block px-8 pt-10 pb-32 bg-quaternary/25">
+              <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
                 <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
                 <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
                 <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
               </a>
-              <a href="" class="relative block px-8 pt-10 pb-32 bg-quaternary/25">
+              <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
                 <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
                 <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
                 <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
@@ -447,10 +450,10 @@
           </div>
         </section>
 
-        <section class="sect sect-library !col-start-6 !col-end-10 -has-bg-circle -bg-circle-lg -bg-circle-secondary before:top-1/2 before:left-1/2 before:-translate-y-1/2 mb-20 text-center">
+        <section class="sect sect-library md:!col-start-6 md:!col-end-10 -has-bg-circle -bg-circle-lg -bg-circle-okfn-green before:top-1/2 before:left-1/2 before:-translate-y-1/2 mb-20 text-center">
           <div class="sect__content">
             <img src="/okfn_front/images/home-sect-library.png" alt="" class="mx-auto mb-12">
-            <h2 class="mb-8 font-bold text-5xl_2 leading-none">Open Knowledge library</h2>
+            <h2 class="mb-8 font-bold text-h1 leading-none">Open Knowledge library</h2>
             <p class="mb-10 text-2xl">
               Free resources to enable organizations, governments and initiatives to be #OpenByDesign.
             </p>
@@ -460,13 +463,13 @@
 
         <section class="sect sect-library-items -tighten-1 -has-bg-circles mb-20">
           <div class="sect__content">
-            <div class="grid grid-cols-3 gap-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
               <a href="" class="relative block px-8 pt-10 pb-28 border-3 border-black bg-white/30">
                 <h3 class="title block mb-14 font-bold text-2xl"> Open Data Handbook </h3>
                 <p>For anyone who works with complex data or across tools or teams (researchers, data scientists, engineers, and decision-makers), this open-source toolkit brings simplicity. </p>
                 <span class="link-arrow-curved absolute left-8 bottom-8" date-time="2022-10-30">Learn more</span>
               </a>
-              <a href="" class="relative flex items-center px-8 py-10 border-3 border-black bg-white/30">
+              <a href="" class="relative flex items-center px-8 py-10 pb-28 border-3 border-black bg-white/30">
                 <h3 class="title block font-bold text-lg text-center"> Open Knowledge Project Repository </h3>
                 <span class="link-arrow-curved absolute left-8 bottom-8" date-time="2022-10-30">Learn more</span>
               </a>
@@ -481,9 +484,10 @@
 
         <section class="sect sect-newsletter -tighten-1 mb-20 -has-bg-circle -bg-circle-lg before:top-full before:left-full before:-translate-y-1/2 before:-translate-x-1/2">
           <div class="sect__content">
-            <div class="flex items-center gap-16">
+            <div class="md:flex md:flex-row-reverse md:items-center md:gap-16">
+              <img class="flex-shrink-0" src="/okfn_front/images/section-newsletter.png" alt="">
               <div class="flex-grow">
-                <h2 class="mb-5 text-5xl_2 leading-none font-bold">Don't miss <br> a thing</h2>
+                <h2 class="mb-5 text-h1 leading-none font-bold">Don't miss <br> a thing</h2>
                 <p class="mb-8 text-2xl leading-normal">
                   Stay on top of what's happening in the <br>
                   #OpenMovement around the world. <br>
@@ -496,7 +500,6 @@
                   </div>
                 </form>
               </div>
-              <img class="flex-shrink-0" src="/okfn_front/images/section-newsletter.png" alt="">
             </div>
           </div>
         </section>
@@ -509,15 +512,13 @@
               <img src="/okfn_front/images/lg-okfn-black.svg" class="h-20" alt="Open Knowledge Foundation">
             </a>
           </div>
-          <nav class="main-footer__nav">
+          <nav class="main-footer__nav -main">
             <ul>
               <li><a href="">Privacy Policy</a></li>
               <li><a href="">IP Policy</a></li>
               <li><a href="">Cookie Policy</a></li>
               <li><a href="">Terms of Use</a></li>
             </ul>
-          </nav>
-          <nav class="main-footer__nav">
             <ul>
               <li><a href="">Code of Conduct</a></li>
               <li><a href="">Jobs</a></li>
@@ -525,7 +526,7 @@
               <li><a href="">Request a Quote</a></li>
             </ul>
           </nav>
-          <nav class="main-footer__nav">
+          <nav class="main-footer__nav -social">
             <ul>
               <li><a href="">Twitter</a></li>
               <li><a href="">YouTube</a></li>
@@ -544,9 +545,8 @@
           </div>
         </div>
       </footer>
-
-      
-      
+        
+        
     </div>
   </body>
 </html>
