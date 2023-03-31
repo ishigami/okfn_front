@@ -28,7 +28,7 @@
 
     &.slick-active {
       button {
-        @apply bg-primary;
+        @apply bg-okfn-blue;
       }
     }
   }
@@ -84,7 +84,7 @@
     @apply text-transparent bg-transparent outline-none;
 
     &::before {
-      @apply border-primary;
+      @apply border-okfn-blue;
     }
   }
 

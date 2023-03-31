@@ -12,7 +12,33 @@ module.exports = {
       },
       fontSize: {
         '2xs': '.6875rem',
-        '5xl_2': '3.4375rem',
+        'h0': ['6.25rem', {
+          lineHeight: '100%',
+          fontWeight: 'bold',
+        }],
+        'h1': ['3.4375rem', {
+          lineHeight: '100%',
+          fontWeight: 'bold',
+        }],
+        'h2': ['2.5rem', {
+          lineHeight: '100%',
+          fontWeight: 'bold',
+        }],
+        'h3': ['1.5rem', {
+          lineHeight: '120%',
+          fontWeight: 'bold',
+        }],
+        'h4': ['1.25rem', {
+          lineHeight: '120#',
+          fontWeight: 'bold',
+        }],
+        'h5': ['1rem', {
+          lineHeight: '120#',
+          fontWeight: 'bold',
+        }],
+        'okfn-lg': ['2.5rem', '120%'],
+        'okfn-md': ['1.375rem', '140%'],
+        'okfn-sm': ['1rem', '140%'],
       },
       gridTemplateColumns: {
         '14': 'repeat(14, minmax(0, 1fr))',
@@ -25,17 +51,26 @@ module.exports = {
         '3': '3px',
       },
       colors: {
-        primary: {
+        'okfn-blue': {
           DEFAULT: '#00d1ff', // pastel blue light
         },
-        'secondary': {
+        'okfn-green': {
           DEFAULT: '#adffed' // pastel green light
         },
-        'tertiary': {
-          DEFAULT: '#e077ff' // pink
+        'okfn-purple': {
+          DEFAULT: '#e077ff' // purple
         },
-        'quaternary': {
-          DEFAULT: '#e4ff36' // lime
+        'okfn-yellow': {
+          DEFAULT: '#e4ff36' // yellow
+        },
+        'okfn-light-gray': {
+          DEFAULT: '#f8f8f8' // light-gray
+        },
+        'okfn-link': {
+          DEFAULT: '#00a9e0' // link
+        },
+        'okfn-content': {
+          DEFAULT: '#e4ff36' // content
         },
       },
       spacing: {
@@ -48,5 +83,27 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    {
+      pattern: /^(bg|border|text)-okfn-(blue|green|purple|yellow|light-gray|link|content)(-[a-z]+)?$/,
+      variants: ['md'],
+    },
+    {
+      pattern: /^text-h([0-9]+)?$/,
+      variants: ['md'],
+    },
+    {
+      pattern: /^text-okfn-(lg|md|sm)?$/,
+      variants: ['md'],
+    },
+    {
+      pattern: /^(bg|border|text)-(black|gray|white)(-[0-9]+)?$/,
+      variants: ['md'],
+    },
+    {
+      pattern: /^(w|h)-(full|screen|auto|16|20|30|40|52|60|72|80)/,
+      variants: ['md'],
+    },
+  ],
   plugins: [],
 }

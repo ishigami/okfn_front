@@ -4,7 +4,7 @@
 
   h1,
   .h1 {
-    @apply text-[3.4375rem] font-bold leading-none;
+    @apply text-h1 font-bold leading-none;
 
     &:first-child {
       @apply mt-0;
@@ -69,7 +69,11 @@
   }
 
   a {
-    @apply underline text-primary;
+    @apply underline text-okfn-link;
+
+    &:hover {
+      @apply text-okfn-link/80;
+    }
   }
 
   .table-wrapper {
@@ -179,7 +183,7 @@
   }
 
   blockquote {
-    @apply p-12 bg-white mb-6 border-l-4 border-gray-600;
+    @apply p-12 mb-6 border-l-4 border-gray-600 bg-okfn-light-gray;
   }
 
   figure {
@@ -212,7 +216,7 @@
   }
 }
 
-.-has-bg-primary .block-txt {
+.-has-bg-okfn-blue .block-txt {
   h1,
   h2 {
     @apply text-white;

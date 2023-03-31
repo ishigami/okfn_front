@@ -2,11 +2,14 @@
 <header class="main-header {{ className }}">
   <div class="flex justify-between items-center">
     <a href="/" class="lg">
-      <img src="/images/lg-okfn.svg" class="h-[5.625rem]" alt="Open Knowledge Foundation">
+      <img src="/images/lg-okfn.svg" class="h-[4.375rem] md:h-[5.625rem]" alt="Open Knowledge Foundation">
     </a>
 
     <nav>
-      <ul>
+      <span class="md:hidden">
+        <img src="/images/icons/menu.svg" alt="Menu">
+      </span>
+      <ul class="hidden md:block">
         <li>
           <a href="" class="labeled">
             <span>Who we are</span>
