@@ -127,7 +127,13 @@ const pageData = {
 export default {
   root: 'src',
   build: {
-    outDir: '../dist'
+    outDir: '../dist',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'src/index.html'),
+        styles: resolve(__dirname, 'src/styles.html')
+      }
+    }
   },
   publicDir: '../public',
   plugins: [
