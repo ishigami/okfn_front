@@ -1,12 +1,8 @@
 .sect {
-  @apply col-start-2 col-end-14;
-
-  &.-expand {
-    @apply col-start-1 col-end-15;
-  }
+  @apply col-span-12;
 
   &.-tighten-1 {
-    @apply col-start-3 col-end-13;
+    @apply col-start-2 col-end-12;
   }
 
   &.-tighten-2 {

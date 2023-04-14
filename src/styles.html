@@ -4,7 +4,7 @@
 
   <body>
     <div class="root">
-      <div class="grid-master">
+      <div class="master">
         <div class="container">
           <header class="col-span-full flex justify-between items-center py-5 mb-20 border-b border-gray-200">
             <img src="/images/lg-okfn.svg" class="h-[5.625rem]" alt="Open Knowledge Foundation">
@@ -132,10 +132,37 @@
                 {{#each headlines}}
                 <tr>
                   <td class="px-3 py-5 text-{{this.code}} border border-gray-200">Headline {{@index}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-{{this.code}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-{{this.code}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.weight}}</td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+
+          <!-- * HIGHLIGHTED HEADLINES -->
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+            <h2 class="text-h2 mb-5">Highlighted Headlines</h2>
+            <table class="w-full border-collapse">
+              <thead class="text-xs font-bold uppercase bg-gray-200">
+                <tr>
+                  <th class="p-3">Text</th>
+                  <th class="p-3">CSS Class</th>
+                  <th class="p-3">Font size</th>
+                  <th class="p-3">Line height</th>
+                  <th class="p-3">Font weight</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each headlines}}
+                <tr>
+                  <td class="px-3 py-5 font-mono text-hl-{{this.code}} border border-gray-200">Headline {{@index}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-hl-{{this.code}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
                 </tr>
                 {{/each}}
               </tbody>
@@ -159,17 +186,44 @@
                 {{#each body}}
                 <tr>
                   <td class="px-3 py-5 text-{{this.code}} border border-gray-200">Text {{this.name}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-{{this.code}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-{{this.code}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-{{this.code}} font-bold border border-gray-200">Text {{this.name}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-{{this.code}} .font-bold</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-{{this.code}} font-bold</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+          </div>
+
+          <!-- * HIGHLIGHTED Body -->
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+            <h2 class="text-h2 mb-5">Highlighted Body</h2>
+            <table class="w-full border-collapse">
+              <thead class="text-xs font-bold uppercase bg-gray-200">
+                <tr>
+                  <th class="p-3">Text</th>
+                  <th class="p-3">CSS Class</th>
+                  <th class="p-3">Font size</th>
+                  <th class="p-3">Line height</th>
+                  <th class="p-3">Font weight</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each body}}
+                <tr>
+                  <td class="px-3 py-5 font-mono text-{{this.code}} border border-gray-200">Text {{this.name}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">font-mono text-{{this.code}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
                 </tr>
                 {{/each}}
               </tbody>

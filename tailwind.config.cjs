@@ -6,9 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': '"Hanken Grotesk", sans-serif',
-        'mono': '"DM Mono", sans-serif',
-        'display': '"DM Sans", sans-serif',
+        'sans': '"HK Grotesk", sans-serif',
+        'mono': '"Necto Mono", monospace',
+        'display': '"HK Grotesk", sans-serif',
       },
       fontSize: {
         '2xs': '.6875rem',
@@ -29,12 +29,36 @@ module.exports = {
           fontWeight: 'bold',
         }],
         'h4': ['1.25rem', {
-          lineHeight: '120#',
+          lineHeight: '120%',
           fontWeight: 'bold',
         }],
         'h5': ['1rem', {
-          lineHeight: '120#',
+          lineHeight: '120%',
           fontWeight: 'bold',
+        }],
+        'hl-h0': ['6.25rem', {
+          lineHeight: '100%',
+          fontFamily: '"Necto Mono", monospace',
+        }],
+        'hl-h1': ['3.4375rem', {
+          lineHeight: '100%',
+          fontFamily: '"Necto Mono", monospace',
+        }],
+        'hl-h2': ['2.5rem', {
+          lineHeight: '100%',
+          fontFamily: '"Necto Mono", monospace',
+        }],
+        'hl-h3': ['1.5rem', {
+          lineHeight: '120%',
+          fontFamily: '"Necto Mono", monospace',
+        }],
+        'hl-h4': ['1.25rem', {
+          lineHeight: '120%',
+          fontFamily: '"Necto Mono", monospace',
+        }],
+        'hl-h5': ['1rem', {
+          lineHeight: '120%',
+          fontFamily: '"Necto Mono", sans-serif',
         }],
         'okfn-lg': ['2.5rem', '120%'],
         'okfn-md': ['1.375rem', '140%'],
@@ -90,6 +114,10 @@ module.exports = {
     },
     {
       pattern: /^text-h([0-9]+)?$/,
+      variants: ['md'],
+    },
+    {
+      pattern: /^text-hl-h([0-9]+)?$/,
       variants: ['md'],
     },
     {

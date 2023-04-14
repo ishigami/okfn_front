@@ -28,14 +28,30 @@ img {
   @apply relative z-0 overflow-hidden min-h-screen;
 }
 
-.grid-master {
-  @apply relative grid grid-cols-14 gap-2.5 mx-auto;
+.master {
+  @apply relative px-4 mx-auto;
 
-  max-width: 94.5rem;
+  max-width: 84rem;
 }
 
 .container {
-  @apply relative grid grid-cols-12 col-start-2 col-end-14 gap-2.5 mx-auto;
+  @apply relative grid grid-cols-12 gap-2.5 mx-auto;
 
-  max-width: 94.5rem;
+  max-width: 84rem;
+}
+
+.no-mobile-break {
+  content: '';
+
+  &:after {
+    content: ' ';
+  }
+
+  @screen md {
+    content: initial;
+
+    &:after {
+      content: initial;
+    }
+  }
 }

@@ -7,17 +7,18 @@
         <div class="container">
           {{> header className='mb-12' }}
 
-          {{#> hero className='mb-20' contentClass='md:flex-row-reverse'}}
+          <h1 class="col-span-full mb-20 text-h0 text-center">We are open advocates</h1>
+
+          {{#> hero className='mb-20' contentClass=''}}
             {{#* inline 'contentText'}}
-              <h1 class="text-h1 !leading-tight">
-                <strong>We are building a world open by design where all knowledge is</strong>
-                <span class="font-mono">accessible to everyone.</span>
+              <h1 class="text-h2 !font-normal !leading-tight text-center">
+                ‘Open knowledge’ is any content, information or data that people are free to use, re-use and redistribute — without any legal, tech or social restriction.
               </h1>
             {{/inline}}
 
             {{#* inline 'contentImage'}}
               <div class="flex-shrink-0">
-                <img src="/images/home-hero-image.png" alt="Home Hero">
+                <img src="/images/who-we-are-hero-illust.png" alt="Who we are Hero">
               </div>
             {{/inline}}
           {{/hero}}

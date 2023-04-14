@@ -1,17 +1,27 @@
 .main-header {
-  @apply relative z-[100] col-start-2 col-end-14 py-5 md:py-12;
+  @apply relative z-[100] col-span-12 py-5 md:py-12;
+
+  label {
+    &.icon {
+      &:active {
+        @apply text-okfn-purple;
+      }
+    }
+  }
 
   .submenu {
-    @apply hidden absolute top-full left-1/2 px-14 pt-5 pb-10 font-display -translate-x-1/2 -translate-y-4 rounded-[3.75rem] whitespace-nowrap text-center font-bold;
-
-    &::before {
-      content: '';
-
-      @apply absolute inset-0 -top-[4.375rem]  z-0 bg-okfn-green blur-xl;
-    }
+    @apply hidden absolute top-full left-1/2 px-14 py-5 font-display -translate-x-1/2 -translate-y-4 rounded-[3.75rem] whitespace-nowrap text-center font-bold border-2 border-okfn-blue bg-white/90;
 
     a {
       @apply block py-3;
+
+      &:hover {
+        @apply text-okfn-blue;
+      }
+
+      &:active {
+        @apply text-okfn-purple;
+      }
     }
 
     li {
@@ -27,6 +37,14 @@
         }
       }
     }
+
+    &.-simple {
+      @apply px-4 py-2 border-none bg-transparent;
+
+      a {
+        @apply py-2;
+      }
+    }
   }
 
   nav {
@@ -40,7 +58,7 @@
 
         > a,
         > label {
-          @apply relative flex justify-center items-center min-h-[4.375rem] text-black border-2 border-black;
+          @apply relative flex justify-center items-center min-h-[4.375rem] font-bold text-black;
 
           border-radius: 2.1875rem;
 
@@ -69,12 +87,14 @@
         &.-active {
           > a,
           > label {
-            @apply border-transparent;
+            @apply text-okfn-blue;
 
-            &::before {
-              content: '';
+            &:hover {
+              @apply text-okfn-blue;
+            }
 
-              @apply absolute z-0 inset-0 bg-okfn-green blur-xl;
+            &:active {
+              @apply text-okfn-purple;
             }
           }
         }
@@ -83,10 +103,29 @@
 
     label {
       @apply cursor-pointer;
+
+      &.icon {
+        span {
+          &::before {
+            @apply block w-6 h-6 bg-black;
+
+            content: '';
+            mask: url(/images/icons/header-search.svg) no-repeat center;
+          }
+        }
+
+        &:hover {
+          span {
+            &::before {
+              @apply bg-okfn-blue;
+            }
+          }
+        }
+      }
     }
   }
 
-  .search {
+  .-search {
     .form {
       @apply absolute top-full right-0 pt-3;
 
@@ -96,7 +135,7 @@
     }
 
     &__close {
-      @apply hidden w-4;
+      @apply hidden w-4 text-okfn-blue;
     }
 
     .input-fake {
@@ -106,20 +145,36 @@
     .switcher__indicator {
       &:checked {
         ~ .switcher__trigger {
-          @apply border-transparent;
+          span {
+            &::before {
+              @apply w-5 h-5 bg-okfn-blue;
 
+              mask: url(/images/icons/close.svg) no-repeat center;
+              mask-size: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .-language {
+    .icon {
+      span {
+        &::before {
+          @apply block w-7 h-7 bg-black;
+
+          content: '';
+          mask: url(/images/icons/header-globe.svg) no-repeat center;
+        }
+      }
+    }
+
+    &:hover {
+      .icon {
+        span {
           &::before {
-            content: '';
-
-            @apply absolute z-0 inset-0 bg-okfn-green blur-xl;
-          }
-
-          .search__open {
-            @apply hidden;
-          }
-
-          .search__close {
-            @apply block;
+            @apply bg-okfn-blue;
           }
         }
       }

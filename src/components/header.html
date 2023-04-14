@@ -5,7 +5,7 @@
       <img src="/images/lg-okfn.svg" class="h-[4.375rem] md:h-[5.625rem]" alt="Open Knowledge Foundation">
     </a>
 
-    <nav>
+    <nav class="main-nav">
       <span class="md:hidden">
         <img src="/images/icons/menu.svg" alt="Menu">
       </span>
@@ -104,13 +104,13 @@
             </li>
           </ul>
         </li>
-        <li class="switcher search">
+        <li class="main-nav__item -search switcher">
           <input type="checkbox" id="switch-search" class="switcher__indicator">
           <label for="switch-search" class="switcher__trigger icon">
             <span>
-              <img src="/images/icons/header-search.svg" class="search__open" alt="Search">
-              <img src="/images/icons/close.svg" class="search__close" alt="Close search">
-          </span>
+              <!-- <img src="/images/icons/header-search.svg" class="-search__open" alt="Search"> -->
+              <!-- <img src="/images/icons/close.svg" class="-search__close" alt="Close search"> -->
+            </span>
           </label>
           <form action="" class="switcher__target form main-header__search">
             <div class="input-fake flex">
@@ -121,11 +121,11 @@
             </div>
           </form>
         </li>
-        <li>
+        <li class="main-nav__item -language">
           <label class="icon">
-            <span><img src="/images/icons/header-globe.svg" alt="Globe"></span>
+            <span></span>
           </label>
-          <ul class="submenu">
+          <ul class="submenu -simple">
             <li><a href="">EN</a></li>
             <li><a href="">ES</a></li>
             <li><a href="">PT-BR</a></li>
