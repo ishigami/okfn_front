@@ -5,17 +5,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Knowledge Foundation</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,500;0,700;1,500;1,700&family=Hanken+Grotesk:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
-    <script type="module" crossorigin src="/okfn_front/assets/main-9e41b58d.js"></script>
-    <link rel="stylesheet" href="/okfn_front/assets/main-894dfe87.css">
+    <script type="module" crossorigin src="/okfn_front/assets/main-2ba948cd.js"></script>
+    <link rel="stylesheet" href="/okfn_front/assets/main-d763bc72.css">
   </head>
 
   <body>
     <div class="root">
-      <div class="grid-master">
+      <div class="master">
         <div class="container">
           <header class="col-span-full flex justify-between items-center py-5 mb-20 border-b border-gray-200">
             <img src="/okfn_front/images/lg-okfn.svg" class="h-[5.625rem]" alt="Open Knowledge Foundation">
@@ -202,45 +199,105 @@
               <tbody>
                 <tr>
                   <td class="px-3 py-5 text-h0 border border-gray-200">Headline 0</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-h0</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-h0</td>
                   <td class="px-3 py-5 text-center border border-gray-200">100px (6.25rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">100%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-h1 border border-gray-200">Headline 1</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-h1</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-h1</td>
                   <td class="px-3 py-5 text-center border border-gray-200">55px (3.4375rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">100%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-h2 border border-gray-200">Headline 2</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-h2</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-h2</td>
                   <td class="px-3 py-5 text-center border border-gray-200">40px (2.5rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">100%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-h3 border border-gray-200">Headline 3</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-h3</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-h3</td>
                   <td class="px-3 py-5 text-center border border-gray-200">24px (1.5rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">120%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-h4 border border-gray-200">Headline 4</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-h4</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-h4</td>
                   <td class="px-3 py-5 text-center border border-gray-200">20px (1.25rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">120%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-h5 border border-gray-200">Headline 5</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-h5</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-h5</td>
                   <td class="px-3 py-5 text-center border border-gray-200">16px (1rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">120%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- * HIGHLIGHTED HEADLINES -->
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+            <h2 class="text-h2 mb-5">Highlighted Headlines</h2>
+            <table class="w-full border-collapse">
+              <thead class="text-xs font-bold uppercase bg-gray-200">
+                <tr>
+                  <th class="p-3">Text</th>
+                  <th class="p-3">CSS Class</th>
+                  <th class="p-3">Font size</th>
+                  <th class="p-3">Line height</th>
+                  <th class="p-3">Font weight</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-3 py-5 font-mono text-hl-h0 border border-gray-200">Headline 0</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-hl-h0</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">100px (6.25rem)</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">100%</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                </tr>
+                <tr>
+                  <td class="px-3 py-5 font-mono text-hl-h1 border border-gray-200">Headline 1</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-hl-h1</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">55px (3.4375rem)</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">100%</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                </tr>
+                <tr>
+                  <td class="px-3 py-5 font-mono text-hl-h2 border border-gray-200">Headline 2</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-hl-h2</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">40px (2.5rem)</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">100%</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                </tr>
+                <tr>
+                  <td class="px-3 py-5 font-mono text-hl-h3 border border-gray-200">Headline 3</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-hl-h3</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">24px (1.5rem)</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">120%</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                </tr>
+                <tr>
+                  <td class="px-3 py-5 font-mono text-hl-h4 border border-gray-200">Headline 4</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-hl-h4</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">20px (1.25rem)</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">120%</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                </tr>
+                <tr>
+                  <td class="px-3 py-5 font-mono text-hl-h5 border border-gray-200">Headline 5</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-hl-h5</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">16px (1rem)</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">120%</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
                 </tr>
               </tbody>
             </table>
@@ -262,45 +319,84 @@
               <tbody>
                 <tr>
                   <td class="px-3 py-5 text-okfn-lg border border-gray-200">Text L</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-okfn-lg</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-okfn-lg</td>
                   <td class="px-3 py-5 text-center border border-gray-200">40px (2.5rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">120%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-okfn-lg font-bold border border-gray-200">Text L</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-okfn-lg .font-bold</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-okfn-lg font-bold</td>
                   <td class="px-3 py-5 text-center border border-gray-200">40px (2.5rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">120%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-okfn-md border border-gray-200">Text M</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-okfn-md</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-okfn-md</td>
                   <td class="px-3 py-5 text-center border border-gray-200">22px (1.375rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">140%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-okfn-md font-bold border border-gray-200">Text M</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-okfn-md .font-bold</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-okfn-md font-bold</td>
                   <td class="px-3 py-5 text-center border border-gray-200">22px (1.375rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">140%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-okfn-sm border border-gray-200">Text S</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-okfn-sm</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-okfn-sm</td>
                   <td class="px-3 py-5 text-center border border-gray-200">16px (1rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">140%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
                 </tr>
                 <tr>
                   <td class="px-3 py-5 text-okfn-sm font-bold border border-gray-200">Text S</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-okfn-sm .font-bold</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">text-okfn-sm font-bold</td>
                   <td class="px-3 py-5 text-center border border-gray-200">16px (1rem)</td>
                   <td class="px-3 py-5 text-center border border-gray-200">140%</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- * HIGHLIGHTED Body -->
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+            <h2 class="text-h2 mb-5">Highlighted Body</h2>
+            <table class="w-full border-collapse">
+              <thead class="text-xs font-bold uppercase bg-gray-200">
+                <tr>
+                  <th class="p-3">Text</th>
+                  <th class="p-3">CSS Class</th>
+                  <th class="p-3">Font size</th>
+                  <th class="p-3">Line height</th>
+                  <th class="p-3">Font weight</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-3 py-5 font-mono text-okfn-lg border border-gray-200">Text L</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">font-mono text-okfn-lg</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">40px (2.5rem)</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">120%</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                </tr>
+                <tr>
+                  <td class="px-3 py-5 font-mono text-okfn-md border border-gray-200">Text M</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">font-mono text-okfn-md</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">22px (1.375rem)</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">140%</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                </tr>
+                <tr>
+                  <td class="px-3 py-5 font-mono text-okfn-sm border border-gray-200">Text S</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">font-mono text-okfn-sm</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">16px (1rem)</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">140%</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
                 </tr>
               </tbody>
             </table>
