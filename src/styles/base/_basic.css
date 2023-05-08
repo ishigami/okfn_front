@@ -29,7 +29,7 @@ img {
 }
 
 .master {
-  @apply relative px-4 mx-auto;
+  @apply relative px-8 mx-auto;
 
   max-width: 84rem;
 }
@@ -40,7 +40,7 @@ img {
   max-width: 84rem;
 }
 
-.no-mobile-break {
+.sm-no-break {
   content: '';
 
   &:after {
@@ -48,6 +48,22 @@ img {
   }
 
   @screen md {
+    content: initial;
+
+    &:after {
+      content: initial;
+    }
+  }
+}
+
+.md-no-break {
+  content: '';
+
+  &:after {
+    content: ' ';
+  }
+
+  @screen lg {
     content: initial;
 
     &:after {

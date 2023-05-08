@@ -13,7 +13,7 @@
 
           <!-- * COLORS -->
           <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
-            <h2 class="text-h2 mb-5">Colors</h2>
+            <h2 class="text-h2 font-bold mb-5">Colors</h2>
             <ul class="flex flex-wrap items-center gap-5 text-center">
               {{#each colors}}
               <li>
@@ -28,7 +28,7 @@
 
           <!-- * BG Circles -->
           <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
-            <h2 class="text-h2 mb-5">Background Circles</h2>
+            <h2 class="text-h2 font-bold mb-5">Background Circles</h2>
             <ul class="flex flex-wrap items-center gap-5 mb-8 text-center">
               {{#each colors}}
                 {{#if this.circle}}
@@ -117,7 +117,7 @@
 
           <!-- * HEADLINES -->
           <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
-            <h2 class="text-h2 mb-5">Headlines</h2>
+            <h2 class="text-h2 font-bold mb-5">Headlines</h2>
             <table class="w-full border-collapse">
               <thead class="text-xs font-bold uppercase bg-gray-200">
                 <tr>
@@ -131,8 +131,8 @@
               <tbody>
                 {{#each headlines}}
                 <tr>
-                  <td class="px-3 py-5 text-{{this.code}} border border-gray-200">Headline {{@index}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">text-{{this.code}}</td>
+                  <td class="px-3 py-5 font-bold text-{{this.code}} border border-gray-200">Headline {{@index}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">font-bold text-{{this.code}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.weight}}</td>
@@ -144,7 +144,7 @@
 
           <!-- * HIGHLIGHTED HEADLINES -->
           <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
-            <h2 class="text-h2 mb-5">Highlighted Headlines</h2>
+            <h2 class="text-h2 font-bold mb-5">Highlighted Headlines</h2>
             <table class="w-full border-collapse">
               <thead class="text-xs font-bold uppercase bg-gray-200">
                 <tr>
@@ -159,7 +159,7 @@
                 {{#each headlines}}
                 <tr>
                   <td class="px-3 py-5 font-mono text-hl-{{this.code}} border border-gray-200">Headline {{@index}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">text-hl-{{this.code}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-200">font-mono text-{{this.code}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
                   <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
@@ -171,7 +171,7 @@
 
           <!-- * Body -->
           <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
-            <h2 class="text-h2 mb-5">Body</h2>
+            <h2 class="text-h2 font-bold mb-5">Body</h2>
             <table class="w-full border-collapse">
               <thead class="text-xs font-bold uppercase bg-gray-200">
                 <tr>
@@ -205,7 +205,7 @@
 
           <!-- * HIGHLIGHTED Body -->
           <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
-            <h2 class="text-h2 mb-5">Highlighted Body</h2>
+            <h2 class="text-h2 font-bold mb-5">Highlighted Body</h2>
             <table class="w-full border-collapse">
               <thead class="text-xs font-bold uppercase bg-gray-200">
                 <tr>
@@ -232,7 +232,7 @@
 
           <!-- * List -->
           <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
-            <h2 class="text-h2 mb-5">List</h2>
+            <h2 class="text-h2 font-bold mb-5">List</h2>
             <table class="w-full border-collapse">
               <thead class="text-xs font-bold uppercase bg-gray-200">
                 <tr>
@@ -263,7 +263,7 @@
 
           <!-- * Text Content -->
           <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
-            <h2 class="text-h2 mb-5">Text Content</h2>
+            <h2 class="text-h2 font-bold mb-5">Text Content</h2>
             <div class="-mt-5 mb-5">CSS Class: .block-txt (applied on the text container)</div>
             <div class="block-txt">
               <p>Leverage agile frameworks to provide a robust synopsis for <a href="">high level overviews</a>. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>

@@ -14,27 +14,21 @@ module.exports = {
         '2xs': '.6875rem',
         'h0': ['6.25rem', {
           lineHeight: '100%',
-          fontWeight: 'bold',
         }],
         'h1': ['3.4375rem', {
           lineHeight: '100%',
-          fontWeight: 'bold',
         }],
         'h2': ['2.5rem', {
           lineHeight: '100%',
-          fontWeight: 'bold',
         }],
         'h3': ['1.5rem', {
           lineHeight: '120%',
-          fontWeight: 'bold',
         }],
         'h4': ['1.25rem', {
           lineHeight: '120%',
-          fontWeight: 'bold',
         }],
         'h5': ['1rem', {
           lineHeight: '120%',
-          fontWeight: 'bold',
         }],
         'hl-h0': ['6.25rem', {
           lineHeight: '100%',
@@ -102,8 +96,15 @@ module.exports = {
         '24': '6rem',
       },
       screens: {
+        '2lg': '1200px',
         'portrait': {'raw': '(orientation: portrait)'},
-        'landscape': {'raw': '(orientation: landscape)'},
+        'landscape': { 'raw': '(orientation: landscape)' },
+        'max-sm': { 'max': '640px' },
+        'max-md': { 'max': '767px' },
+        'max-lg': { 'max': '1023px' },
+        'max-2lg': { 'max': '1199px' },
+        'max-xl': { 'max': '1279px' },
+        'max-2xl': { 'max': '1535px' },
       },
     },
   },

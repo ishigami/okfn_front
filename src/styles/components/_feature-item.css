@@ -3,6 +3,10 @@
 
   figure {
     @apply block mb-8;
+
+    img {
+      @apply max-h-full;
+    }
   }
 
   .title {

@@ -1,5 +1,5 @@
 .main-header {
-  @apply relative z-[100] col-span-12 py-5 md:py-12;
+  @apply relative z-[100] col-span-12 py-5 md:pt-8 md:pb-12;
 
   label {
     &.icon {
@@ -10,7 +10,11 @@
   }
 
   .submenu {
-    @apply hidden absolute top-full left-1/2 px-14 py-5 font-display -translate-x-1/2 -translate-y-4 rounded-[3.75rem] whitespace-nowrap text-center font-bold border-2 border-okfn-blue bg-white/90;
+    @apply block pt-3 pl-12 font-display text-left;
+
+    @screen lg {
+      @apply hidden absolute top-full left-1/2 px-14 py-5 -translate-x-1/2 -translate-y-4 rounded-[3.75rem] whitespace-nowrap text-center font-bold border-2 border-okfn-blue bg-white/90;
+    }
 
     a {
       @apply block py-3;
@@ -47,90 +51,32 @@
     }
   }
 
-  nav {
-    @apply font-display;
-
-    > ul {
-      @apply md:flex md:gap-x-3;
-
-      > li {
-        @apply relative z-10;
-
-        > a,
-        > label {
-          @apply relative flex justify-center items-center min-h-[4.375rem] font-bold text-black;
-
-          border-radius: 2.1875rem;
-
-          &.labeled {
-            @apply px-6;
-          }
-
-          &.icon {
-            @apply min-w-[4.375rem];
-          }
-
-          span {
-            @apply relative z-10;
-          }
-        }
-
-        &:hover {
-          @apply z-0;
-
-          .submenu {
-            @apply block;
-          }
-        }
-
-        &:hover,
-        &.-active {
-          > a,
-          > label {
-            @apply text-okfn-blue;
-
-            &:hover {
-              @apply text-okfn-blue;
-            }
-
-            &:active {
-              @apply text-okfn-purple;
-            }
-          }
-        }
-      }
-    }
-
-    label {
-      @apply cursor-pointer;
-
-      &.icon {
-        span {
-          &::before {
-            @apply block w-6 h-6 bg-black;
-
-            content: '';
-            mask: url(/images/icons/header-search.svg) no-repeat center;
-          }
-        }
-
-        &:hover {
-          span {
-            &::before {
-              @apply bg-okfn-blue;
-            }
-          }
-        }
-      }
-    }
-  }
-
   .-search {
+    @screen max-lg {
+      @apply mb-12;
+    }
+
+    .icon {
+      @apply hidden lg:flex;
+    }
+
     .form {
-      @apply absolute top-full right-0 pt-3;
+      @screen max-lg {
+        @apply block;
+      }
+
+      @screen lg {
+        @apply absolute top-full right-0 pt-3;
+      }
 
       &-control {
-        @apply h-[3.125rem];
+        @apply h-[2.75rem] lg:h-[3.125rem];
+      }
+
+      @screen max-lg {
+        .input-fake {
+          @apply border-none;
+        }
       }
     }
 
@@ -139,7 +85,11 @@
     }
 
     .input-fake {
-      @apply w-[28rem] pr-4 rounded-[2.1875rem] text-xl;
+      @apply w-full;
+
+      @screen lg {
+        @apply w-[28rem] pr-4 rounded-[2.1875rem] text-xl;
+      }
     }
 
     .switcher__indicator {
@@ -159,6 +109,29 @@
   }
 
   .-language {
+    @screen max-lg {
+      @apply inline-flex items-center mx-auto px-5 py-2 pr-12 border border-black rounded-[1.25rem] cursor-pointer;
+
+      &::before {
+        @apply absolute top-1/2 right-4 w-5 h-3 -translate-y-1/2 bg-current;
+
+        content: '';
+        mask: url(/images/icons/arrow-solid-down.svg) no-repeat center;
+      }
+
+      &::after {
+        content: attr(data-current-language);
+      }
+
+      &:hover {
+        @apply text-okfn-blue;
+
+        .submenu {
+          @apply text-black;
+        }
+      }
+    }
+
     .icon {
       span {
         &::before {
@@ -170,12 +143,227 @@
       }
     }
 
-    &:hover {
+    .submenu {
+      @apply absolute top-full left-0 text-left hidden translate-x-2 whitespace-nowrap;
+
+      @screen lg {
+        @apply left-auto right-0 text-right translate-x-4;
+      }
+    }
+
+    &:hover,
+    &:active {
       .icon {
         span {
           &::before {
             @apply bg-okfn-blue;
           }
+        }
+      }
+
+      .submenu {
+        @apply block;
+      }
+    }
+  }
+}
+
+.main-nav {
+  @apply font-display;
+
+  .icon {
+    &-close {
+      @apply hidden;
+    }
+
+    &-menu {
+      @apply block;
+    }
+  }
+
+  &__container {
+    @apply fixed top-0 right-0 z-0 hidden w-full max-w-[27.5rem] h-screen p-12 pt-36 bg-okfn-green text-left;
+
+    .lg {
+      @apply absolute top-8 left-8 hidden;
+    }
+
+    @screen lg {
+      @apply relative top-auto right-auto block w-auto max-w-none h-auto p-0 bg-transparent overflow-visible;
+    }
+  }
+
+  &__menu {
+    @apply block h-full -mr-12 pr-12 overflow-y-auto text-center;
+
+    max-height: calc(100vh - 9rem);
+
+    @screen lg {
+      @apply flex gap-x-3 h-auto max-h-none mr-0 pr-0 overflow-visible text-left;
+    }
+
+    .main-nav__item {
+      @apply relative z-10 mb-8;
+
+      @screen lg {
+        @apply mb-0;
+      }
+
+      > a,
+      > label {
+        @apply relative flex justify-start items-center text-2xl/none font-bold text-black;
+
+        @screen lg {
+          @apply justify-center min-h-[4.375rem] text-base/none;
+        }
+
+        border-radius: 2.1875rem;
+
+        &.labeled {
+          @apply px-3;
+
+          &::before {
+            @apply w-4 h-4 mr-4 bg-black;
+
+            content: '';
+            mask: url(/images/icons/arrow-right.svg) no-repeat center;
+            mask-size: contain;
+
+            &:hover {
+              @apply bg-okfn-blue;
+            }
+          }
+
+          @screen lg {
+            &::before {
+              @apply hidden;
+            }
+          }
+
+          @screen 2lg {
+            @apply px-6;
+          }
+        }
+
+        &.icon {
+          @apply min-w-[2.375rem];
+
+          @screen 2lg {
+            @apply min-w-[4.375rem];
+          }
+        }
+
+        span {
+          @apply relative z-10;
+        }
+      }
+
+      &:hover,
+      &.-active {
+        > a,
+        > label {
+          @apply text-okfn-blue;
+
+          &:hover {
+            @apply text-okfn-blue;
+          }
+
+          &:active {
+            @apply text-okfn-purple;
+          }
+
+          &.labeled {
+            &::before {
+              @apply bg-okfn-blue;
+            }
+          }
+        }
+      }
+
+      @screen lg {
+        &:hover {
+          @apply z-0;
+
+          .submenu {
+            @apply block;
+          }
+        }
+      }
+    }
+  }
+
+  label {
+    @apply cursor-pointer;
+
+    &.icon {
+      span {
+        &::before {
+          @apply block w-6 h-6 bg-black;
+
+          content: '';
+          mask: url(/images/icons/header-search.svg) no-repeat center;
+        }
+      }
+
+      &:hover {
+        span {
+          &::before {
+            @apply bg-okfn-blue;
+          }
+        }
+      }
+    }
+  }
+
+  &__switcher {
+    &-indicator {
+      @apply absolute top-0 right-0 w-0 h-0 opacity-0;
+
+      &:checked {
+        ~ .root {
+          @screen max-lg {
+            @apply h-screen overflow-hidden;
+          }
+
+          .main-nav {
+            @screen max-lg {
+              &::before {
+                @apply fixed inset-0 block w-full h-full bg-black/90;
+
+                content: '';
+              }
+            }
+
+            > .icon {
+              .icon-menu {
+                @apply hidden;
+              }
+
+              .icon-close {
+                @apply block;
+              }
+            }
+
+            > .main-nav__container {
+              @apply block;
+
+              @screen max-lg {
+                .lg {
+                  @apply block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__item {
+    &.-has-submenu {
+      .labeled {
+        &::before {
+          mask-image: url(/images/icons/arrow-bottom-right.svg) !important;
         }
       }
     }

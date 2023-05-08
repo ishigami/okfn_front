@@ -1,12 +1,10 @@
 .sect {
-  @apply col-span-12;
+  @apply col-span-full;
 
   &.-tighten-1 {
-    @apply col-start-2 col-end-12;
-  }
-
-  &.-tighten-2 {
-    @apply col-start-4 col-end-12;
+    @screen lg {
+      @apply col-start-2 col-end-12 col-span-10;
+    }
   }
 
   &__content {
