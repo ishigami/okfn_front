@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Knowledge Foundation</title>
     
-    <script type="module" crossorigin src="/okfn_front/assets/main-2ba948cd.js"></script>
-    <link rel="stylesheet" href="/okfn_front/assets/main-d763bc72.css">
+    <script type="module" crossorigin src="/okfn_front/assets/main-753112bd.js"></script>
+    <link rel="stylesheet" href="/okfn_front/assets/main-997b7e3b.css">
   </head>
   <body>
+    <input type="checkbox" class="main-nav__switcher-indicator" id="main-nav__switcher-indicator">
     <div class="root">
       <div class="master -has-bg-circle -bg-circle-lg before:left-1/2 before:-translate-y-1/2">
         <div class="container">
@@ -21,133 +22,139 @@
               </a>
           
               <nav class="main-nav">
-                <span class="md:hidden">
-                  <img src="/okfn_front/images/icons/menu.svg" alt="Menu">
-                </span>
-                <ul class="hidden md:block">
-                  <li>
-                    <a href="" class="labeled">
-                      <span>Who we are</span>
-                    </a>
+                <label for="main-nav__switcher-indicator" class="icon relative z-50 lg:hidden cursor-pointer">
+                  <img src="/okfn_front/images/icons/menu.svg" class="icon-menu" alt="Menu">
+                  <img src="/okfn_front/images/icons/close.svg" class="icon-close" alt="Menu">
+                </label>
+                <div class="main-nav__container">
+                  <a href="/" class="lg">
+                    <img src="/okfn_front/images/lg-okfn-black.svg" class="h-20" alt="Open Knowledge Foundation">
+                  </a>
           
-                    <ul class="submenu">
-                      <li>
-                        <a href="">Our Team</a>
-                      </li>
-                      <li>
-                        <a href="">Our Board</a>
-                        <ul>
-                          <li><a href="">Subitem</a></li>
-                          <li><a href="">Subitem</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="">Governance</a>
-                      </li>
-                      <li>
-                        <a href="">Our Funders</a>
-                      </li>
-                      <li>
-                        <a href="">Our History</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="" class="labeled">
-                      <span>Tools</span>
-                    </a>
-                    <ul class="submenu">
-                      <li>
-                        <a href="">The Open Definition</a>
-                      </li>
-                      <li>
-                        <a href="">Open Standards</a>
-                      </li>
-                      <li>
-                        <a href="">Open Data Commons</a>
-                      </li>
-                      <li>
-                        <a href="">CKAN</a>
-                      </li>
-                      <li>
-                        <a href="">Frictionless Data</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="" class="labeled">
-                      <span>Services</span>
-                    </a>
-                    <ul class="submenu">
-                      <li>
-                        <a href="">Tech Services</a>
-                      </li>
-                      <li>
-                        <a href="">Consultancy Services</a>
-                      </li>
-                      <li>
-                        <a href="">School of Data</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="" class="labeled">
-                      <span>Global movement</span>
-                    </a>
-                    <ul class="submenu">
-                      <li>
-                        <a href="">The Open Knowledge Network</a>
-                      </li>
-                      <li>
-                        <a href="">Project Repository</a>
-                      </li>
-                      <li>
-                        <a href="">Global Directory</a>
-                      </li>
-                      <li>
-                        <a href="">Open Data Day</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="" class="labeled">
-                      <span>News</span>
-                    </a>
-                    <ul class="submenu">
-                      <li>
-                        <a href="">Events Calendar</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="main-nav__item -search switcher">
-                    <input type="checkbox" id="switch-search" class="switcher__indicator">
-                    <label for="switch-search" class="switcher__trigger icon">
-                      <span>
-                        <!-- <img src="/images/icons/header-search.svg" class="-search__open" alt="Search"> -->
-                        <!-- <img src="/images/icons/close.svg" class="-search__close" alt="Close search"> -->
-                      </span>
-                    </label>
-                    <form action="" class="switcher__target form main-header__search">
-                      <div class="input-fake flex">
-                        <input class="form-control flex-grow" type="text" />
-                        <button class="flex-shrink-0">
-                          <img src="/okfn_front/images/icons/header-search.svg" class="max-w-none" alt="Search">
-                        </button>
-                      </div>
-                    </form>
-                  </li>
-                  <li class="main-nav__item -language">
-                    <label class="icon">
-                      <span></span>
-                    </label>
-                    <ul class="submenu -simple">
-                      <li><a href="">EN</a></li>
-                      <li><a href="">ES</a></li>
-                      <li><a href="">PT-BR</a></li>
-                      <li><a href="">FR</a></li>
-                    </ul>
-                  </li>
-                </ul>
+                  <ul class="main-nav__menu">
+                    <li class="main-nav__item -has-submenu">
+                      <a href="" class="labeled">
+                        <span>Who we are</span>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">Our Team</a>
+                        </li>
+                        <li>
+                          <a href="">Our Board</a>
+                          <ul>
+                            <li><a href="">Subitem</a></li>
+                            <li><a href="">Subitem</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="">Governance</a>
+                        </li>
+                        <li>
+                          <a href="">Our Funders</a>
+                        </li>
+                        <li>
+                          <a href="">Our History</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item -has-submenu">
+                      <a href="" class="labeled">
+                        <span>Tools</span>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">The Open Definition</a>
+                        </li>
+                        <li>
+                          <a href="">Open Standards</a>
+                        </li>
+                        <li>
+                          <a href="">Open Data Commons</a>
+                        </li>
+                        <li>
+                          <a href="">CKAN</a>
+                        </li>
+                        <li>
+                          <a href="">Frictionless Data</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item -has-submenu">
+                      <a href="" class="labeled">
+                        <span>Services</span>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">Tech Services</a>
+                        </li>
+                        <li>
+                          <a href="">Consultancy Services</a>
+                        </li>
+                        <li>
+                          <a href="">School of Data</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item -has-submenu">
+                      <a href="" class="labeled">
+                        <span>Global movement</span>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">The Open Knowledge Network</a>
+                        </li>
+                        <li>
+                          <a href="">Project Repository</a>
+                        </li>
+                        <li>
+                          <a href="">Global Directory</a>
+                        </li>
+                        <li>
+                          <a href="">Open Data Day</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item -has-submenu">
+                      <a href="" class="labeled">
+                        <span>News</span>
+                      </a>
+                      <ul class="submenu">
+                        <li>
+                          <a href="">Events Calendar</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="main-nav__item -search switcher">
+                      <input type="checkbox" id="switch-search" class="switcher__indicator">
+                      <label for="switch-search" class="switcher__trigger icon">
+                        <span>
+                          <!-- <img src="/images/icons/header-search.svg" class="-search__open" alt="Search"> -->
+                          <!-- <img src="/images/icons/close.svg" class="-search__close" alt="Close search"> -->
+                        </span>
+                      </label>
+                      <form action="" class="switcher__target form main-header__search">
+                        <div class="input-fake flex">
+                          <input class="form-control flex-grow" type="text" />
+                          <button class="flex-shrink-0">
+                            <img src="/okfn_front/images/icons/header-search.svg" class="max-w-none" alt="Search">
+                          </button>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="main-nav__item -language" data-current-language="English">
+                      <label class="icon">
+                        <span></span>
+                      </label>
+                      <ul class="submenu -simple">
+                        <li><a href="">English</a></li>
+                        <li><a href="">Español</a></li>
+                        <li><a href="">Português (Brasil)</a></li>
+                        <li><a href="">Français</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </nav>
             </div>
           </header>
@@ -155,10 +162,10 @@
 <!-- hero -->
 <section class="sect sect-hero mb-20">
   <div class="sect__content">
-    <div class="md:flex md:gap-x-8 md:items-center md:flex-row-reverse">
+    <div class="lg:flex lg:gap-x-8 lg:items-center md:flex-row-reverse">
       <div class="flex-shrink-0">
-                      <div class="flex-shrink-0">
-                        <img src="/okfn_front/images/home-hero-image.png" alt="Home Hero">
+                      <div class="mb-10 lg:mb-0 flex-shrink-0">
+                        <img class="mx-auto" src="/okfn_front/images/home-hero-image.svg" alt="Home Hero">
                       </div>
       </div>
       <div class="flex-grow">
@@ -172,14 +179,14 @@
 </section>
 <!-- /hero -->
 <!-- sect-features -->
-<section class="sect sect-features mb-20">
+<section class="sect sect-features -tighten-1 mb-20">
   <div class="sect__content">
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 mx-auto">
                     <!-- feature-item -->
                     <a href="" class="feature-item -center">
-                      <figure>
-                        <img src="/okfn_front/images/home-features-open-data.png" alt="">
+                      <figure class="flex items-center justify-center aspect-[272/227]">
+                        <img src="/okfn_front/images/home-features-open-data.svg" alt="">
                       </figure>
                     
                         <strong class="title"> We enable open data creation </strong>
@@ -190,8 +197,8 @@
                     </a>
                     <!-- /feature-item -->              <!-- feature-item -->
                     <a href="" class="feature-item -center">
-                      <figure>
-                        <img src="/okfn_front/images/home-features-knowledge.png" alt="">
+                      <figure class="flex items-center justify-center aspect-[272/227]">
+                        <img src="/okfn_front/images/home-features-knowledge.svg" alt="">
                       </figure>
                     
                         <strong class="title"> We are knowledge spreaders </strong>
@@ -202,8 +209,8 @@
                     </a>
                     <!-- /feature-item -->              <!-- feature-item -->
                     <a href="" class="feature-item -center">
-                      <figure>
-                        <img src="/okfn_front/images/home-features-global-movement.png" alt="">
+                      <figure class="flex items-center justify-center aspect-[272/227]">
+                        <img src="/okfn_front/images/home-features-global-movement.svg" alt="">
                       </figure>
                     
                         <strong class="title"> We are global movement builders </strong>
@@ -221,7 +228,7 @@
               <h2 class="mb-20 text-h1 text-center font-bold leading-none">Open Knowledge in <br> practice</h2>
 
               <div class="flex flex-col gap-y-20">
-                <a href="" class="highlight text-white">
+                <a href="" class="highlight sm:text-white">
 <!-- img-set -->
 <figure class="img-set">
   <img src="/okfn_front/images/home-highlight-1.png" class="" alt="">
@@ -245,7 +252,7 @@
 </figure>
 <!-- /img-set -->                </a>
 
-                <a href="" class="highlight text-white">
+                <a href="" class="highlight sm:text-white">
 <!-- img-set -->
 <figure class="img-set">
   <img src="/okfn_front/images/home-highlight-3.png" class="" alt="">
@@ -265,10 +272,10 @@
   <div class="sect__content">
                   <h2 class="mb-20 text-h1 text-center font-bold leading-none">Open Knowledge <br> data tools</h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16 mx-auto">
                     <!-- feature-item -->
                     <a href="" class="feature-item ">
-                      <figure>
+                      <figure class="">
                         <img src="/okfn_front/images/home-tools-ckan.png" alt="">
                       </figure>
                     
@@ -279,7 +286,7 @@
                     </a>
                     <!-- /feature-item -->              <!-- feature-item -->
                     <a href="" class="feature-item ">
-                      <figure>
+                      <figure class="">
                         <img src="/okfn_front/images/home-tools-frictionless-data.png" alt="">
                       </figure>
                     
@@ -290,7 +297,7 @@
                     </a>
                     <!-- /feature-item -->              <!-- feature-item -->
                     <a href="" class="feature-item ">
-                      <figure>
+                      <figure class="">
                         <img src="/okfn_front/images/home-tools-open-data-commons.png" alt="">
                       </figure>
                     
@@ -306,14 +313,14 @@
 <!-- hero -->
 <section class="sect sect-hero -tighten-1 mx-auto -has-bg-circle -bg-circle-okfn-purple -bg-circle-lg mb-20">
   <div class="sect__content">
-    <div class="md:flex md:gap-x-8 md:items-center md:flex-row-reverse md:!gap-x-28">
+    <div class="lg:flex lg:gap-x-8 lg:items-center md:flex-row-reverse md:!gap-x-28">
       <div class="flex-shrink-0">
-                      <div class="flex-shrink-0 mb-8 md:mb-0">
-                        <img src="/okfn_front/images/home-hero-global-movement.png" class="mx-auto md:mx-0" alt="Home Hero">
+                      <div class="flex-shrink-0 mb-10 lg:mb-0">
+                        <img src="/okfn_front/images/home-hero-global-movement.svg" class="mx-auto" alt="Home Hero">
                       </div>
       </div>
       <div class="flex-grow">
-                      <h2 class="mb-8 font-bold text-h1 leading-none">Global <br> movement in <br> action</h2>
+                      <h2 class="mb-8 font-bold text-h1 leading-none">Global <br class="md-no-break"> movement in <br class="md-no-break"> action</h2>
                       <span class="block mb-16 text-2xl">Open Knowledge Foundation is part of a worldwide movement working together for a fair, free and open future.</span>
                       <a href="" class="btn">Join us!</a>
       </div>
@@ -326,7 +333,7 @@
   <div class="sect__content ">
                   <h3 class="py-6 mb-20 text-2xl font-bold">Open Knowledge established chapters</h3>
     
-                  <div class="grid grid-cols-2 md:grid-cols-5 items-center gap-x-2.5 gap-y-10 mb-20">
+                  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 items-center gap-x-2.5 gap-y-10 mb-20">
                     <a href="">
                       <figure>
                         <img src="/okfn_front/images/lg-okfn-country-belgium.png" alt="">
@@ -413,7 +420,7 @@
             <div class="sect__content">
               <h2 class="mb-8 font-bold text-h1 leading-none">Latest <br> updates</h2>
 
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16">
                 <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
                   <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
                   <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
@@ -461,17 +468,17 @@
 
           <section class="sect sect-library-items -tighten-1 -has-bg-circles mb-20">
             <div class="sect__content">
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-                <a href="" class="relative block px-8 pt-10 pb-28 border-3 border-black bg-white/30">
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
+                <a href="" class="relative block px-4 lg:px-8 pt-5 lg:pt-10 pb-28 border-3 border-black bg-white/30">
                   <h3 class="title block mb-14 font-bold text-2xl"> Open Data Handbook </h3>
                   <p>For anyone who works with complex data or across tools or teams (researchers, data scientists, engineers, and decision-makers), this open-source toolkit brings simplicity. </p>
                   <span class="link-arrow-curved absolute left-8 bottom-8" date-time="2022-10-30">Learn more</span>
                 </a>
-                <a href="" class="relative flex items-center px-8 py-10 pb-28 border-3 border-black bg-white/30">
+                <a href="" class="relative flex items-center px-4 lg:px-8 py-5 lg:py-10 pb-28 border-3 border-black bg-white/30">
                   <h3 class="title block font-bold text-lg text-center"> Open Knowledge Project Repository </h3>
                   <span class="link-arrow-curved absolute left-8 bottom-8" date-time="2022-10-30">Learn more</span>
                 </a>
-                <a href="" class="relative block px-8 pt-10 pb-28 border-3 border-black bg-white/30">
+                <a href="" class="relative block px-4 lg:px-8 pt-5 lg:pt-10 pb-28 border-3 border-black bg-white/30">
                   <h3 class="title block mb-14 font-bold text-2xl"> AI and Digital Transformation Report </h3>
                   <p>A report by the UN Broadband Commission Working Group on AI Capacity Building, leveraging a multi-stakeholder leadership model to assess the critical needs for public sector digital transformation.</p>
                   <span class="link-arrow-curved absolute left-8 bottom-8" date-time="2022-10-30">Learn more</span>
@@ -482,13 +489,13 @@
 
           <section class="sect sect-newsletter -tighten-1 mb-20 -has-bg-circle -bg-circle-lg before:top-full before:left-full before:-translate-y-1/2 before:-translate-x-1/2">
             <div class="sect__content">
-              <div class="md:flex md:flex-row-reverse md:items-center md:gap-16">
-                <img class="flex-shrink-0" src="/okfn_front/images/section-newsletter.png" alt="">
-                <div class="flex-grow">
-                  <h2 class="mb-5 text-h1 leading-none font-bold">Don't miss <br> a thing</h2>
+              <div class="lg:flex lg:flex-row-reverse lg:items-center lg:gap-16">
+                <img class="mx-auto lg:flex-shrink-0" src="/okfn_front/images/section-newsletter.png" alt="">
+                <div class="lg:flex-grow">
+                  <h2 class="mb-5 text-h1 leading-none font-bold">Don't miss <br class="md-no-break"> a thing</h2>
                   <p class="mb-8 text-2xl leading-normal">
-                    Stay on top of what's happening in the <br>
-                    #OpenMovement around the world. <br>
+                    Stay on top of what's happening in the <br class="md-no-break">
+                    #OpenMovement around the world. <br class="md-no-break">
                     (We will never spam you!)
                   </p>
                   <form action="" class="form">
