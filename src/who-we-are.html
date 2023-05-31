@@ -7,32 +7,33 @@
         <div class="container">
           {{> header className='mb-12' }}
 
-          <h1 class="col-span-full mb-20 text-h0 text-center">We are open advocates</h1>
+          <h1 class="col-span-full mb-10 text-h0 font-bold text-center">We are everywhere</h1>
 
-          {{#> hero className='mb-20' contentClass=''}}
+          {{#> hero className='-tighten-1 mb-20' contentClass=''}}
             {{#* inline 'contentText'}}
-              <h1 class="text-h2 !font-normal !leading-tight text-center">
-                ‘Open knowledge’ is any content, information or data that people are free to use, re-use and redistribute — without any legal, tech or social restriction.
-              </h1>
+              <h2 class="text-h2 !font-normal !leading-tight text-center">
+                Meet the Open Knowledge Foundation's global team.
+              </h2>
             {{/inline}}
 
             {{#* inline 'contentImage'}}
               <div class="flex-shrink-0">
-                <img src="/images/who-we-are-hero-illust.png" alt="Who we are Hero">
+                <img src="/images/who-we-are-hero-illust.svg" alt="Who we are Hero">
               </div>
             {{/inline}}
           {{/hero}}
 
-          {{#> section-features className='mb-20' }}
-            {{#* inline 'contentHeader'}}
-            {{/inline}}
+          <section class="sect sect-simple -tighten-2 mb-20 text-okfn-md">
+            <div class="sect__content">
+              <p>We work as an <strong>agile organisation</strong> of 15-20 experts distributed across the world, combining foundation work and services. Today, 57% of our staff is from the Global South and 100% of our leadership team is made up of women.</p>
+            </div>
+          </section>
 
-            {{#* inline 'contentFeatures'}}
-              {{> feature-item className="-center" image='home-features-open-data.png' title='We enable open data creation' description='We are the technology arm of institutions, organizations and communities, so they can create, manage and publish open data with our tools.'}}
-              {{> feature-item className="-center" image='home-features-knowledge.png' title='We are knowledge spreaders' description='We offer capacity-building training on data literacies for individuals, teams and communities so they can understand transformative power of openness.'}}
-              {{> feature-item className="-center" image='home-features-global-movement.png' title='We are global movement builders' description='We equip people with data tools and capabilities and connect them with open knowledge communities worldwide.'}}
-            {{/inline}}
-          {{/section-features}}
+          <section class="sect sect-simple -tighten-2 py-6 mb-20 text-h3 font-bold text-center">
+            <div class="sect__content">
+              <h3>Leadership</h3>
+            </div>
+          </section>
 
           <section class="sect sect-highlights mb-24">
             <div class="sect__content">
@@ -72,205 +73,7 @@
             </div>
           </section>
 
-          {{#> section-features className='-tighten-1 mb-20' }}
-            {{#* inline 'contentHeader'}}
-              <h2 class="mb-20 text-h1 text-center font-bold leading-none">Open Knowledge <br> data tools</h2>
-            {{/inline}}
-
-            {{#* inline 'contentFeatures'}}
-              {{> feature-item className='' image='home-tools-ckan.png' description='The world\'s leading open source data management system. CKAN makes it easy to publish, share and discover data. It powers hundreds of data portals worldwide including governments, NGOs, research centers and enterprises.'}}
-              {{> feature-item className='' image='home-tools-frictionless-data.png' description='For anyone who works with complex data or across tools or teams (researchers, data scientists, engineers, and decision-makers), this open-source toolkit brings simplicity to the data experience through software and standards.'}}
-              {{> feature-item className='' image='home-tools-open-data-commons.png' description='The home of a set of legal tools and licenses to help you publish, provide and use open data: Open Database License (ODbL), Open Data Commons Attribution License, and Open Data Commons Public Domain Dedication and License (PDDL).'}}
-            {{/inline}}
-          {{/section-features}}
-
-          {{#> hero className='-tighten-1 mx-auto -has-bg-circle -bg-circle-okfn-purple -bg-circle-lg mb-20' contentClass='md:flex-row-reverse md:!gap-x-28'}}
-            {{#* inline 'contentText'}}
-              <h2 class="mb-8 font-bold text-h1 leading-none">Global <br> movement in <br> action</h2>
-              <span class="block mb-16 text-2xl">Open Knowledge Foundation is part of a worldwide movement working together for a fair, free and open future.</span>
-              <a href="" class="btn">Join us!</a>
-            {{/inline}}
-
-            {{#* inline 'contentImage'}}
-              <div class="flex-shrink-0 mb-8 md:mb-0">
-                <img src="/images/home-hero-global-movement.png" class="mx-auto md:mx-0" alt="Home Hero">
-              </div>
-            {{/inline}}
-          {{/hero}}
-
-          {{#> section-simple className='-tighten-1 mx-auto mb-20 text-center'}}
-            {{#* inline 'contentSection'}}
-              <h3 class="py-6 mb-20 text-2xl font-bold">Open Knowledge established chapters</h3>
-
-              <div class="grid grid-cols-2 md:grid-cols-5 items-center gap-x-2.5 gap-y-10 mb-20">
-                <a href="">
-                  <figure>
-                    <img src="/images/lg-okfn-country-belgium.png" alt="">
-                  </figure>
-                </a>
-                <a href="">
-                  <figure>
-                    <img src="/images/lg-okfn-country-belgium.png" alt="">
-                  </figure>
-                </a>
-                <a href="">
-                  <figure>
-                    <img src="/images/lg-okfn-country-belgium.png" alt="">
-                  </figure>
-                </a>
-                <a href="">
-                  <figure>
-                    <img src="/images/lg-okfn-country-belgium.png" alt="">
-                  </figure>
-                </a>
-                <a href="">
-                  <figure>
-                    <img src="/images/lg-okfn-country-belgium.png" alt="">
-                  </figure>
-                </a>
-                <a href="">
-                  <figure>
-                    <img src="/images/lg-okfn-country-belgium.png" alt="">
-                  </figure>
-                </a>
-                <a href="">
-                  <figure>
-                    <img src="/images/lg-okfn-country-belgium.png" alt="">
-                  </figure>
-                </a>
-                <a href="">
-                  <figure>
-                    <img src="/images/lg-okfn-country-belgium.png" alt="">
-                  </figure>
-                </a>
-              </div>
-
-              <a href="" class="font-mono">More countries</a>
-            {{/inline}}
-          {{/section-simple}}
-
-          <section class="sect sect-gallery true-w-full -mt-20 mb-20">
-            <div class="sect__content overflow-hidden">
-              <div class="slider-wrapper">
-                <div class="slider -is-width-auto" data-slider="{ autoplay: true, autoplaySpeed: 0, arrows: false, cssEase: 'linear', slidesToShow: 1, slidesToScroll: 1, speed: 9000, variableWidth: true }" data-slider-mobile="{ autoplay: true, autoplaySpeed: 0, arrows: false, cssEase: 'linear', slidesToShow: 1, slidesToScroll: 1, speed: 9000, variableWidth: true }">
-                  <div class="gallery__item pt-20">
-                    {{#> img-set image='home-highlight-1.png' imgClass='h-[24rem] aspect-square'}}
-                      {{#* inline 'imgText'}}
-                        <strong class="title">Open Science in action! Making it easier for science researchers to share their data</strong>
-                      {{/inline}}
-                    {{/img-set}}
-                  </div>
-                  <div class="gallery__item pt-20">
-                    {{#> img-set image='home-highlight-2.png' imgClass=''}}
-                      {{#* inline 'imgText'}}
-                        <strong class="title">Open Science in action! Making it easier for science researchers to share their data</strong>
-                      {{/inline}}
-                    {{/img-set}}
-                  </div>
-                  <div class="gallery__item pt-20">
-                    {{#> img-set image='home-highlight-3.png' imgClass='h-[28rem]'}}
-                      {{#* inline 'imgText'}}
-                        <strong class="title">Open Science in action! Making it easier for science researchers to share their data</strong>
-                      {{/inline}}
-                    {{/img-set}}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="sect sect-updates -tighten-1 -has-bg-circle -bg-circle-okfn-yellow before:-translate-x-1/2 before:-translate-y-1/2 mb-20">
-            <div class="sect__content">
-              <h2 class="mb-8 font-bold text-h1 leading-none">Latest <br> updates</h2>
-
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-                <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
-                  <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
-                  <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
-                  <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
-                </a>
-                <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
-                  <h3 class="title block mb-8 font-bold text-2xl"> Better together than alone: say hello again to the Open Knowledge Network </h3>
-                  <p>Join the movement! Today we are launching two projects to shine a light on the tremendous work the Network has been doing in the past decade.</p>
-                  <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
-                </a>
-                <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
-                  <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
-                  <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
-                  <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
-                </a>
-                <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
-                  <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
-                  <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
-                  <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
-                </a>
-                <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
-                  <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
-                  <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
-                  <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
-                </a>
-                <a href="" class="relative block px-8 pt-10 pb-32 bg-okfn-yellow/25">
-                  <h3 class="title block mb-8 font-bold text-2xl"> 100+ Conversations to inspire our new Direction </h3>
-                  <p>We are talking to 100 thinkers and doers to define our digital future, understand better our role and work together to make open knowledge a verb, beyond words.</p>
-                  <time class="absolute left-8 bottom-8 font-mono text-sm" date-time="2022-10-30">October 30, 2022</time>
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section class="sect sect-library md:!col-start-5 md:!col-end-9 -has-bg-circle -bg-circle-lg -bg-circle-okfn-green before:top-1/2 before:left-1/2 before:-translate-y-1/2 mb-20 text-center">
-            <div class="sect__content">
-              <img src="/images/home-sect-library.png" alt="" class="mx-auto mb-12">
-              <h2 class="mb-8 font-bold text-h1 leading-none">Open Knowledge library</h2>
-              <p class="mb-10 text-2xl">
-                Free resources to enable organizations, governments and initiatives to be #OpenByDesign.
-              </p>
-              <a href="" class="btn">Find out more</a>
-            </div>
-          </section>
-
-          <section class="sect sect-library-items -tighten-1 -has-bg-circles mb-20">
-            <div class="sect__content">
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
-                <a href="" class="relative block px-8 pt-10 pb-28 border-3 border-black bg-white/30">
-                  <h3 class="title block mb-14 font-bold text-2xl"> Open Data Handbook </h3>
-                  <p>For anyone who works with complex data or across tools or teams (researchers, data scientists, engineers, and decision-makers), this open-source toolkit brings simplicity. </p>
-                  <span class="link-arrow-curved absolute left-8 bottom-8" date-time="2022-10-30">Learn more</span>
-                </a>
-                <a href="" class="relative flex items-center px-8 py-10 pb-28 border-3 border-black bg-white/30">
-                  <h3 class="title block font-bold text-lg text-center"> Open Knowledge Project Repository </h3>
-                  <span class="link-arrow-curved absolute left-8 bottom-8" date-time="2022-10-30">Learn more</span>
-                </a>
-                <a href="" class="relative block px-8 pt-10 pb-28 border-3 border-black bg-white/30">
-                  <h3 class="title block mb-14 font-bold text-2xl"> AI and Digital Transformation Report </h3>
-                  <p>A report by the UN Broadband Commission Working Group on AI Capacity Building, leveraging a multi-stakeholder leadership model to assess the critical needs for public sector digital transformation.</p>
-                  <span class="link-arrow-curved absolute left-8 bottom-8" date-time="2022-10-30">Learn more</span>
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section class="sect sect-newsletter -tighten-1 mb-20 -has-bg-circle -bg-circle-lg before:top-full before:left-full before:-translate-y-1/2 before:-translate-x-1/2">
-            <div class="sect__content">
-              <div class="md:flex md:flex-row-reverse md:items-center md:gap-16">
-                <img class="flex-shrink-0" src="/images/section-newsletter.png" alt="">
-                <div class="flex-grow">
-                  <h2 class="mb-5 text-h1 leading-none font-bold">Don't miss <br> a thing</h2>
-                  <p class="mb-8 text-2xl leading-normal">
-                    Stay on top of what's happening in the <br>
-                    #OpenMovement around the world. <br>
-                    (We will never spam you!)
-                  </p>
-                  <form action="" class="form">
-                    <div class="input-fake flex">
-                      <input class="form-control flex-grow" type="email" placeholder="Your email" />
-                      <button class="btn flex-shrink-0">Subscribe</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </section>
+          {{> section-newsletter }}
         </div>
       </div>
 

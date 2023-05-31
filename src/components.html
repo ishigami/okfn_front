@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{> head }}
+  <body class="bg-gray-200">
+    <input type="checkbox" class="main-nav__switcher-indicator" id="main-nav__switcher-indicator">
+    <div class="root">
+      <div class="master">
+        <div class="container">
+          <header class="col-span-full flex justify-between items-center py-5 mb-20 border-b border-gray-300">
+            <img src="/images/lg-okfn.svg" class="h-[5.625rem]" alt="Open Knowledge Foundation">
+            <h1 class="text-h1">Components</h1>
+          </header>
+
+          <!-- BUTTONS -->
+          <h2 class="col-span-full mb-8 pb-4 border-b border-gray-300 text-h2 text-right">Buttons</h2>
+          <div class="sect mb-20">
+            <div class="sect__content">
+              <div class="flex gap-10">
+                <a href="javascript:;" class="btn">
+                  Button default
+                </a>
+                <a href="javascript:;" class="btn -white">
+                  Button white
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- IMAGES -->
+          <h2 class="col-span-full mb-8 pb-4 border-b border-gray-300 text-h2 text-right">Images</h2>
+
+          <!-- IMAGES: HIGHLIGHT -->
+          <h3 class="col-span-full mb-8 pb-4 border-b border-gray-300 text-h3 text-right">Highlights (Section)</h3>
+          <div class="sect -tighten-2 sect-highlights mb-20">
+            <div class="sect__content">
+              <a href="javascript:;" class="highlight sm:text-white">
+                {{#> img-set image='home-highlight-1.png' imgClass=''}}
+                  {{#* inline 'imgText'}}
+                    <span class="tag">Advocacy</span>
+                    <strong class="title">Frictionless Planet: Activating the power of Open Knowledge and Data to fight the Climate Crisis</strong>
+                    <span class="link-arrow-curved">Learn more</span>
+                  {{/inline}}
+                {{/img-set}}
+              </a>
+            </div>
+          </div>
+
+          <!-- IMAGES: CAROUSEL -->
+          <h3 class="col-span-full mb-8 pb-4 border-b border-gray-300 text-h3 text-right">Carousel</h3>
+          <div class="sect -tighten-2 sect-generic mb-20">
+            <div class="sect__content">
+              <div class="slider-wrapper -mx-12">
+                <div class="slider" data-slider="{ cssEase: 'linear', slidesToShow: 1, slidesToScroll: 1 }" data-slider-mobile="{ cssEase: 'linear', slidesToShow: 1, slidesToScroll: 1 }">
+                  <div class="slider-item px-12 py-10">
+                    {{#> img-set image='home-highlight-1.png' imgClass=''}}
+                      {{#* inline 'imgText'}}
+                      {{/inline}}
+                    {{/img-set}}
+                  </div>
+                  <div class="slider-item p-10">
+                    {{#> img-set image='home-highlight-1.png' imgClass=''}}
+                      {{#* inline 'imgText'}}
+                      {{/inline}}
+                    {{/img-set}}
+                  </div>
+                  <div class="slider-item p-10">
+                    {{#> img-set image='home-highlight-1.png' imgClass=''}}
+                      {{#* inline 'imgText'}}
+                      {{/inline}}
+                    {{/img-set}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- IMAGES: VIDEO -->
+          <h3 class="col-span-full mb-8 pb-4 border-b border-gray-300 text-h3 text-right">Video</h3>
+          <div class="sect -tighten-2 sect-highlights mb-20">
+            <div class="sect__content">
+              <span class="highlight cursor-pointer" data-open-video="t3byQ873C5w">
+                {{#> img-set image='home-highlight-1.png' className='-is-video' imgClass=''}}
+                  {{#* inline 'imgText'}}
+                  {{/inline}}
+                {{/img-set}}
+              </span>
+            </div>
+          </div>
+
+
+          <!-- /CONTAINER -->
+        </div>
+      </div>
+      {{> footer }}
+      {{> foot }}
+    </div>
+  </body>
+</html>

@@ -131,7 +131,8 @@ export default {
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'src/index.html'),
-        styles: resolve(__dirname, 'src/styles.html')
+        styles: resolve(__dirname, 'src/styles.html'),
+        components: resolve(__dirname, 'src/components.html'),
       }
     }
   },

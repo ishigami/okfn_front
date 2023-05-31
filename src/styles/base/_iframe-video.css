@@ -1,0 +1,17 @@
+.iframe-video {
+  @apply mx-auto mb-5 last:mb-0;
+
+  max-width: 40rem;
+
+  &__wrapper {
+    @apply relative h-0;;
+
+    padding-bottom: 56.25%; /* 16:9 */
+    /* background: url(../images/video-placeholder.webp) no-repeat center center; */
+    /* background-size: cover; */
+  }
+
+  iframe {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+}
