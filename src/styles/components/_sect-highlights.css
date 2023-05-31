@@ -6,8 +6,6 @@
   .highlight {
     @apply relative block flex-1 mx-auto drop-shadow-[0_10px_20px_rgba(0,0,0,0.25)];
 
-    max-width: 61.25rem;
-
     figure {
       @apply relative;
 

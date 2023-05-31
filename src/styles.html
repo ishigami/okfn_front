@@ -2,22 +2,22 @@
 <html lang="en">
   {{> head }}
 
-  <body>
+  <body class="bg-gray-200">
     <div class="root">
       <div class="master">
         <div class="container">
-          <header class="col-span-full flex justify-between items-center py-5 mb-20 border-b border-gray-200">
+          <header class="col-span-full flex justify-between items-center py-5 mb-20 border-b border-gray-300">
             <img src="/images/lg-okfn.svg" class="h-[5.625rem]" alt="Open Knowledge Foundation">
             <h1 class="text-h1">Styles</h1>
           </header>
 
           <!-- * COLORS -->
-          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-300">
             <h2 class="text-h2 font-bold mb-5">Colors</h2>
             <ul class="flex flex-wrap items-center gap-5 text-center">
               {{#each colors}}
               <li>
-                <div class="w-40 h-40 mb-3 rounded-md bg-{{this.code}} border border-gray-200"></div>
+                <div class="w-40 h-40 mb-3 rounded-md bg-{{this.code}} border border-gray-300"></div>
                 <strong class="block">{{this.name}}</strong>
                 <em class="block mb-4 text-xs">{{this.hex}}</em>
                 <span class="block text-xs">CSS class: <br> [text|bg]-{{this.code}}</span>
@@ -27,7 +27,7 @@
           </div>
 
           <!-- * BG Circles -->
-          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-300">
             <h2 class="text-h2 font-bold mb-5">Background Circles</h2>
             <ul class="flex flex-wrap items-center gap-5 mb-8 text-center">
               {{#each colors}}
@@ -43,7 +43,7 @@
             </ul>
 
             <table class="w-full border-collapse text-center">
-              <thead class="text-xs font-bold uppercase bg-gray-200">
+              <thead class="text-xs font-bold uppercase bg-gray-300">
                 <tr>
                   <th class="p-3">Size</th>
                   <th class="p-3">Dimensions</th>
@@ -53,60 +53,60 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="p-3 py-5 border border-gray-200">Default</td>
-                  <td class="p-3 py-5 border border-gray-200">
+                  <td class="p-3 py-5 border border-gray-300">Default</td>
+                  <td class="p-3 py-5 border border-gray-300">
                     500px x 500px <br>
                     <span class="text-xs">
                       (31.25rem x 31.25rem)
                     </span>
                   </td>
-                  <td class="p-3 py-5 border border-gray-200">-has-bg-circle</td>
-                  <td class="p-3 py-5 border border-gray-200">
+                  <td class="p-3 py-5 border border-gray-300">-has-bg-circle</td>
+                  <td class="p-3 py-5 border border-gray-300">
                     135px <br>
                     (8.4375rem)
                   </td>
                 </tr>
 
                 <tr>
-                  <td class="p-3 py-5 border border-gray-200">Small</td>
-                  <td class="p-3 py-5 border border-gray-200">
+                  <td class="p-3 py-5 border border-gray-300">Small</td>
+                  <td class="p-3 py-5 border border-gray-300">
                     500px x 500px <br>
                     <span class="text-xs">
                       (31.25rem x 31.25rem)
                     </span>
                   </td>
-                  <td class="p-3 py-5 border border-gray-200">-has-bg-circle -bg-circle-sm</td>
-                  <td class="p-3 py-5 border border-gray-200">
+                  <td class="p-3 py-5 border border-gray-300">-has-bg-circle -bg-circle-sm</td>
+                  <td class="p-3 py-5 border border-gray-300">
                     544px <br>
                     (34rem)
                   </td>
                 </tr>
 
                 <tr>
-                  <td class="p-3 py-5 border border-gray-200">Large</td>
-                  <td class="p-3 py-5 border border-gray-200">
+                  <td class="p-3 py-5 border border-gray-300">Large</td>
+                  <td class="p-3 py-5 border border-gray-300">
                     700px x 700px <br>
                     <span class="text-xs">
                       (43.75rem x 43.75rem)
                     </span>
                   </td>
-                  <td class="p-3 py-5 border border-gray-200">-has-bg-circle -bg-circle-lg</td>
-                  <td class="p-3 py-5 border border-gray-200">
+                  <td class="p-3 py-5 border border-gray-300">-has-bg-circle -bg-circle-lg</td>
+                  <td class="p-3 py-5 border border-gray-300">
                     135px <br>
                     (8.4375rem)
                   </td>
                 </tr>
 
                 <tr>
-                  <td class="p-3 py-5 border border-gray-200">Extra small</td>
-                  <td class="p-3 py-5 border border-gray-200">
+                  <td class="p-3 py-5 border border-gray-300">Extra small</td>
+                  <td class="p-3 py-5 border border-gray-300">
                     94px x 94px <br>
                     <span class="text-xs">
                       (5.875rem x 5.875rem)
                     </span>
                   </td>
-                  <td class="p-3 py-5 border border-gray-200">-has-bg-circle -bg-circle-xs</td>
-                  <td class="p-3 py-5 border border-gray-200">
+                  <td class="p-3 py-5 border border-gray-300">-has-bg-circle -bg-circle-xs</td>
+                  <td class="p-3 py-5 border border-gray-300">
                     20px <br>
                     (1.25rem)
                   </td>
@@ -116,10 +116,10 @@
           </div>
 
           <!-- * HEADLINES -->
-          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-300">
             <h2 class="text-h2 font-bold mb-5">Headlines</h2>
             <table class="w-full border-collapse">
-              <thead class="text-xs font-bold uppercase bg-gray-200">
+              <thead class="text-xs font-bold uppercase bg-gray-300">
                 <tr>
                   <th class="p-3">Text</th>
                   <th class="p-3">CSS Class</th>
@@ -131,11 +131,11 @@
               <tbody>
                 {{#each headlines}}
                 <tr>
-                  <td class="px-3 py-5 font-bold text-{{this.code}} border border-gray-200">Headline {{@index}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">font-bold text-{{this.code}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.weight}}</td>
+                  <td class="px-3 py-5 font-bold text-{{this.code}} border border-gray-300">Headline {{@index}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">font-bold text-{{this.code}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.weight}}</td>
                 </tr>
                 {{/each}}
               </tbody>
@@ -143,10 +143,10 @@
           </div>
 
           <!-- * HIGHLIGHTED HEADLINES -->
-          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-300">
             <h2 class="text-h2 font-bold mb-5">Highlighted Headlines</h2>
             <table class="w-full border-collapse">
-              <thead class="text-xs font-bold uppercase bg-gray-200">
+              <thead class="text-xs font-bold uppercase bg-gray-300">
                 <tr>
                   <th class="p-3">Text</th>
                   <th class="p-3">CSS Class</th>
@@ -158,11 +158,11 @@
               <tbody>
                 {{#each headlines}}
                 <tr>
-                  <td class="px-3 py-5 font-mono text-hl-{{this.code}} border border-gray-200">Headline {{@index}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">font-mono text-{{this.code}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                  <td class="px-3 py-5 font-mono text-hl-{{this.code}} border border-gray-300">Headline {{@index}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">font-mono text-{{this.code}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">Regular</td>
                 </tr>
                 {{/each}}
               </tbody>
@@ -170,10 +170,10 @@
           </div>
 
           <!-- * Body -->
-          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-300">
             <h2 class="text-h2 font-bold mb-5">Body</h2>
             <table class="w-full border-collapse">
-              <thead class="text-xs font-bold uppercase bg-gray-200">
+              <thead class="text-xs font-bold uppercase bg-gray-300">
                 <tr>
                   <th class="p-3">Text</th>
                   <th class="p-3">CSS Class</th>
@@ -185,18 +185,18 @@
               <tbody>
                 {{#each body}}
                 <tr>
-                  <td class="px-3 py-5 text-{{this.code}} border border-gray-200">Text {{this.name}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">text-{{this.code}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                  <td class="px-3 py-5 text-{{this.code}} border border-gray-300">Text {{this.name}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">text-{{this.code}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">Regular</td>
                 </tr>
                 <tr>
-                  <td class="px-3 py-5 text-{{this.code}} font-bold border border-gray-200">Text {{this.name}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">text-{{this.code}} font-bold</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">Bold</td>
+                  <td class="px-3 py-5 text-{{this.code}} font-bold border border-gray-300">Text {{this.name}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">text-{{this.code}} font-bold</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">Bold</td>
                 </tr>
                 {{/each}}
               </tbody>
@@ -204,10 +204,10 @@
           </div>
 
           <!-- * HIGHLIGHTED Body -->
-          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-300">
             <h2 class="text-h2 font-bold mb-5">Highlighted Body</h2>
             <table class="w-full border-collapse">
-              <thead class="text-xs font-bold uppercase bg-gray-200">
+              <thead class="text-xs font-bold uppercase bg-gray-300">
                 <tr>
                   <th class="p-3">Text</th>
                   <th class="p-3">CSS Class</th>
@@ -219,11 +219,11 @@
               <tbody>
                 {{#each body}}
                 <tr>
-                  <td class="px-3 py-5 font-mono text-{{this.code}} border border-gray-200">Text {{this.name}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">font-mono text-{{this.code}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                  <td class="px-3 py-5 font-mono text-{{this.code}} border border-gray-300">Text {{this.name}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">font-mono text-{{this.code}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">Regular</td>
                 </tr>
                 {{/each}}
               </tbody>
@@ -231,10 +231,10 @@
           </div>
 
           <!-- * List -->
-          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-300">
             <h2 class="text-h2 font-bold mb-5">List</h2>
             <table class="w-full border-collapse">
-              <thead class="text-xs font-bold uppercase bg-gray-200">
+              <thead class="text-xs font-bold uppercase bg-gray-300">
                 <tr>
                   <th class="p-3">Text</th>
                   <th class="p-3">CSS Class</th>
@@ -246,15 +246,15 @@
               <tbody>
                 {{#each body}}
                 <tr>
-                  <td class="px-3 py-5 text-{{this.code}} border border-gray-200">
+                  <td class="px-3 py-5 text-{{this.code}} border border-gray-300">
                     <ul class="list-disc list-outside pl-8">
                       <li>List {{this.name}}</li>
                     </ul>
                   </td>
-                  <td class="px-3 py-5 text-center border border-gray-200">.text-{{this.code}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.size}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">{{this.height}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-200">Regular</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">.text-{{this.code}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">Regular</td>
                 </tr>
                 {{/each}}
               </tbody>
@@ -262,7 +262,7 @@
           </div>
 
           <!-- * Text Content -->
-          <div class="col-span-full pb-20 mb-20 border-b border-gray-200">
+          <div class="col-span-full pb-20 mb-20 border-b border-gray-300">
             <h2 class="text-h2 font-bold mb-5">Text Content</h2>
             <div class="-mt-5 mb-5">CSS Class: .block-txt (applied on the text container)</div>
             <div class="block-txt">

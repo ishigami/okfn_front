@@ -9,3 +9,7 @@ export function str2Object (str) {
 
   return JSON.parse(jsonStr); //converts to a regular object
 };
+
+export function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}

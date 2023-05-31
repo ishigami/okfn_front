@@ -69,10 +69,14 @@
   }
 
   a {
-    @apply underline text-okfn-link;
+    @apply text-okfn-link;
 
     &:hover {
-      @apply text-okfn-link/80;
+      @apply text-okfn-purple;
+    }
+
+    &:active {
+      @apply text-current;
     }
   }
 

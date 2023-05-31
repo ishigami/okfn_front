@@ -13,11 +13,11 @@
     @apply block pt-3 pl-12 font-display text-left;
 
     @screen lg {
-      @apply hidden absolute top-full left-1/2 px-14 py-5 -translate-x-1/2 -translate-y-4 rounded-[3.75rem] whitespace-nowrap text-center font-bold border-2 border-okfn-blue bg-white/90;
+      @apply hidden absolute top-full left-1/2 px-14 py-5 -translate-x-1/2 -translate-y-4 rounded-[3.75rem] whitespace-nowrap text-center font-bold border-2 border-okfn-blue bg-white bg-opacity-90;
     }
 
     a {
-      @apply block py-3;
+      @apply block py-3 transition-colors duration-500 ease-in-out;
 
       &:hover {
         @apply text-okfn-blue;
@@ -211,10 +211,10 @@
 
       > a,
       > label {
-        @apply relative flex justify-start items-center text-2xl/none font-bold text-black;
+        @apply relative flex justify-start items-center text-2xl leading-none font-bold text-black transition-colors duration-500 ease-in-out;
 
         @screen lg {
-          @apply justify-center min-h-[4.375rem] text-base/none;
+          @apply justify-center min-h-[4.375rem] text-base leading-none;
         }
 
         border-radius: 2.1875rem;
@@ -231,6 +231,10 @@
 
             &:hover {
               @apply bg-okfn-blue;
+            }
+
+            &:active {
+              @apply bg-okfn-purple;
             }
           }
 
