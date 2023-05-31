@@ -6,7 +6,7 @@
   }
 
   &:active {
-    @apply bg-okfn-purple text-white;
+    @apply bg-okfn-purple text-white duration-150;
   }
 
   &.-white{
@@ -17,7 +17,7 @@
     }
 
     &:active {
-      @apply bg-okfn-purple text-white;
+      @apply bg-okfn-purple text-white duration-150;
     }
   }
 }

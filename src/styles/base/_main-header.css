@@ -4,7 +4,7 @@
   label {
     &.icon {
       &:active {
-        @apply text-okfn-purple;
+        @apply text-okfn-purple duration-150;
       }
     }
   }
@@ -24,7 +24,7 @@
       }
 
       &:active {
-        @apply text-okfn-purple;
+        @apply text-okfn-purple duration-150;
       }
     }
 
@@ -234,7 +234,7 @@
             }
 
             &:active {
-              @apply bg-okfn-purple;
+              @apply bg-okfn-purple duration-150;
             }
           }
 
@@ -273,7 +273,7 @@
           }
 
           &:active {
-            @apply text-okfn-purple;
+            @apply text-okfn-purple duration-150;
           }
 
           &.labeled {

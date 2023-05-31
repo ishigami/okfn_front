@@ -1,0 +1,15 @@
+<!-- img-set -->
+<figure class="img-set -video {{ className }}" data-play-video="{{ videoId }}">
+  <div class="image">
+    <img src="/images/{{image}}" class="{{imgClass}}" alt="">
+    <div class="iframe-video w-full !mb-0">
+      <div class="iframe-video__wrapper">
+        <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <figcaption class="text">
+    {{> imgText}}
+  </figcaption>
+</figure>
+<!-- /img-set -->

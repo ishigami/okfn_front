@@ -5,6 +5,7 @@ import { sleep, str2Object } from './helpers';
 
 const okfnMain = {
   init () {
+    okfnMain.applyPlayVideo();
     okfnMain.applyOpenVideo();
     okfnMain.applySlider();
   },
@@ -78,6 +79,19 @@ const okfnMain = {
         $(this).slick(sliderOptions);
       });
     }
+  },
+
+  applyPlayVideo () {
+    const videoPlayTrigger = $('[data-play-video]');
+    if (!videoPlayTrigger.length) {
+      return
+    }
+
+    videoPlayTrigger.on('click', function () {
+      const el = $(this);
+      el.addClass('-active');
+      el.find('iframe').attr('src', 'https://www.youtube.com/embed/' + $(this).attr('data-play-video') + '?autoplay=1');
+    });
   },
 
   applyOpenVideo () {

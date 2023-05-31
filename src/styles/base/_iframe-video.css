@@ -1,8 +1,6 @@
 .iframe-video {
   @apply mx-auto mb-5 last:mb-0;
 
-  max-width: 40rem;
-
   &__wrapper {
     @apply relative h-0;;
 

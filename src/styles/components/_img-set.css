@@ -27,7 +27,31 @@
 
     &:active {
       &::after {
-        @apply bg-okfn-purple border-opacity-0;
+        @apply bg-okfn-purple border-opacity-0 duration-150;
+      }
+    }
+  }
+
+  &.-video {
+    @apply cursor-pointer;
+
+    .iframe-video {
+      @apply hidden;
+    }
+
+    &.-active {
+      &::after {
+        @apply hidden;
+      }
+
+      .image {
+        img {
+          @apply hidden;
+        }
+      }
+
+      .iframe-video {
+        @apply block;
       }
     }
   }
@@ -50,7 +74,7 @@ a {
 
       &:active {
         &::before {
-          @apply bg-okfn-purple bg-opacity-70;
+          @apply bg-okfn-purple bg-opacity-70 duration-150;
         }
       }
     }

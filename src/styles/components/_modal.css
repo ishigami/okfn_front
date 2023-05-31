@@ -24,7 +24,7 @@
 
     &:active {
       &::before {
-        @apply bg-okfn-purple;
+        @apply bg-okfn-purple duration-150;
       }
     }
   }
