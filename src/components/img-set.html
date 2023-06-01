@@ -1,10 +1,16 @@
 <!-- img-set -->
-<figure class="img-set {{ className }}">
-  <div class="image">
-    <img src="/images/{{image}}" class="{{imgClass}}" alt="">
-  </div>
-  <figcaption class="text">
-    {{> imgText}}
-  </figcaption>
-</figure>
+{{#if href}}
+  <a href="{{ href }}" class="{{ linkClass }}">
+{{/if}}
+  <figure class="img-set {{ className }}">
+    <div class="image">
+      <img src="/images/{{image}}" class="{{imgClass}}" alt="">
+    </div>
+    <figcaption class="text">
+      {{> imgText}}
+    </figcaption>
+  </figure>
+{{#if href}}
+  </a>
+{{/if}}
 <!-- /img-set -->

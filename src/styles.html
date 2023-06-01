@@ -123,9 +123,11 @@
                 <tr>
                   <th class="p-3">Text</th>
                   <th class="p-3">CSS Class</th>
-                  <th class="p-3">Font size</th>
-                  <th class="p-3">Line height</th>
-                  <th class="p-3">Font weight</th>
+                  <th class="p-3">Desktop <br> Font size</th>
+                  <th class="p-3">Desktop <br> Line height</th>
+                  <th class="p-3">Mobile <br> Font size</th>
+                  <th class="p-3">Mobile <br> Line height</th>
+                  <th class="p-3">Font <br> weight</th>
                 </tr>
               </thead>
               <tbody>
@@ -135,6 +137,8 @@
                   <td class="px-3 py-5 text-center border border-gray-300">font-bold text-{{this.code}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileSize}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileHeight}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.weight}}</td>
                 </tr>
                 {{/each}}
@@ -150,18 +154,22 @@
                 <tr>
                   <th class="p-3">Text</th>
                   <th class="p-3">CSS Class</th>
-                  <th class="p-3">Font size</th>
-                  <th class="p-3">Line height</th>
-                  <th class="p-3">Font weight</th>
+                  <th class="p-3">Desktop <br> Font size</th>
+                  <th class="p-3">Desktop <br> Line height</th>
+                  <th class="p-3">Mobile <br> Font size</th>
+                  <th class="p-3">Mobile <br> Line height</th>
+                  <th class="p-3">Font <br> weight</th>
                 </tr>
               </thead>
               <tbody>
                 {{#each headlines}}
                 <tr>
-                  <td class="px-3 py-5 font-mono text-hl-{{this.code}} border border-gray-300">Headline {{@index}}</td>
-                  <td class="px-3 py-5 text-center border border-gray-300">font-mono text-{{this.code}}</td>
+                  <td class="px-3 py-5 text-hl-{{this.code}} border border-gray-300">Headline {{@index}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">text-hl-{{this.code}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileSize}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileHeight}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">Regular</td>
                 </tr>
                 {{/each}}
@@ -177,9 +185,11 @@
                 <tr>
                   <th class="p-3">Text</th>
                   <th class="p-3">CSS Class</th>
-                  <th class="p-3">Font size</th>
-                  <th class="p-3">Line height</th>
-                  <th class="p-3">Font weight</th>
+                  <th class="p-3">Desktop <br> Font size</th>
+                  <th class="p-3">Desktop <br> Line height</th>
+                  <th class="p-3">Mobile <br> Font size</th>
+                  <th class="p-3">Mobile <br> Line height</th>
+                  <th class="p-3">Font <br> weight</th>
                 </tr>
               </thead>
               <tbody>
@@ -189,6 +199,8 @@
                   <td class="px-3 py-5 text-center border border-gray-300">text-{{this.code}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileSize}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileHeight}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">Regular</td>
                 </tr>
                 <tr>
@@ -196,6 +208,8 @@
                   <td class="px-3 py-5 text-center border border-gray-300">text-{{this.code}} font-bold</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileSize}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileHeight}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">Bold</td>
                 </tr>
                 {{/each}}
@@ -211,9 +225,11 @@
                 <tr>
                   <th class="p-3">Text</th>
                   <th class="p-3">CSS Class</th>
-                  <th class="p-3">Font size</th>
-                  <th class="p-3">Line height</th>
-                  <th class="p-3">Font weight</th>
+                  <th class="p-3">Desktop <br> Font size</th>
+                  <th class="p-3">Desktop <br> Line height</th>
+                  <th class="p-3">Mobile <br> Font size</th>
+                  <th class="p-3">Mobile <br> Line height</th>
+                  <th class="p-3">Font <br> weight</th>
                 </tr>
               </thead>
               <tbody>
@@ -223,6 +239,8 @@
                   <td class="px-3 py-5 text-center border border-gray-300">font-mono text-{{this.code}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileSize}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileHeight}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">Regular</td>
                 </tr>
                 {{/each}}
@@ -238,9 +256,11 @@
                 <tr>
                   <th class="p-3">Text</th>
                   <th class="p-3">CSS Class</th>
-                  <th class="p-3">Font size</th>
-                  <th class="p-3">Line height</th>
-                  <th class="p-3">Font weight</th>
+                  <th class="p-3">Desktop <br> Font size</th>
+                  <th class="p-3">Desktop <br> Line height</th>
+                  <th class="p-3">Mobile <br> Font size</th>
+                  <th class="p-3">Mobile <br> Line height</th>
+                  <th class="p-3">Font <br> weight</th>
                 </tr>
               </thead>
               <tbody>
@@ -254,6 +274,8 @@
                   <td class="px-3 py-5 text-center border border-gray-300">.text-{{this.code}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.size}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">{{this.height}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileSize}}</td>
+                  <td class="px-3 py-5 text-center border border-gray-300">{{this.mobileHeight}}</td>
                   <td class="px-3 py-5 text-center border border-gray-300">Regular</td>
                 </tr>
                 {{/each}}
