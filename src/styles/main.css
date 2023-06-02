@@ -22,10 +22,16 @@
 @import './components/_switcher.css';
 
 @import './components/_sect-highlights.css';
+@import './components/_article.css';
+@import './components/_banner.css';
+@import './components/_card-author.css';
+@import './components/_card-person.css';
 @import './components/_blog-opening.css';
 @import './components/_content-grid.css';
 @import './components/_feature-item.css';
 @import './components/_headline.css';
+@import './components/_list.css';
+@import './components/_page-closing.css';
 @import './components/_page-opening.css';
 @import './components/_gallery.css';
 @import './components/_img-set.css';

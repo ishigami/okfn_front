@@ -1,0 +1,20 @@
+<div class="card-person {{ className }}">
+    <div class="card-person__content">
+        <div class="intro">
+            <div class="image flex-shrink-0">
+                <img src="/images/{{ image }}" alt="{{ author }}">
+            </div>
+            <div class="content">
+                <h2 class="name">{{ name }}</h2>
+                <div class="font-mono">
+                    <span class="position">{{ position }}</span>
+                    <a href="mailto:{{ email }}" class="block mb-3">{{ email }}</a>
+                    <a href="javascript:;" class="block">{{ socialAt }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="block-txt">
+            {{> description }}
+        </div>
+    </div>
+</div>
