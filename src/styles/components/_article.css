@@ -13,6 +13,14 @@
     @apply col-start-6 col-span-6 md:col-start-6 md:col-span-4 md:pl-10;
   }
 
+  .title {
+    @apply block mb-5 text-h3;
+  }
+
+  .author {
+    @apply font-mono text-okfn-sm;
+  }
+
   &:hover {
     .title {
       @apply text-okfn-blue;
