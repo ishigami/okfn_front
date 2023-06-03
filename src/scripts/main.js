@@ -112,7 +112,7 @@ const okfnMain = {
     // }
 
     if (!$('#alert-video').length) {
-      $('body').append($('<div id="alert-video" class="hidden md:max-w-xl lg:max-w-5xl"><div class="iframe-video md:max-w-xl lg:max-w-5xl !mb-0"><div class="iframe-video__wrapper"><iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen /></div></div></div>'));
+      $('body').append($('<div id="alert-video" class="hidden w-full md:max-w-xl lg:max-w-5xl"><div class="iframe-video md:max-w-xl lg:max-w-5xl !mb-0"><div class="iframe-video__wrapper"><iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen /></div></div></div>'));
       sleep(500);
     }
     $('#alert-video').find('iframe').attr('src', 'https://www.youtube.com/embed/' + youtubeId);
