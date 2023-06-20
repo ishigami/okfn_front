@@ -151,6 +151,7 @@ export default {
         main: resolve(__dirname, 'src/index.html'),
         styles: resolve(__dirname, 'src/styles.html'),
         components: resolve(__dirname, 'src/components.html'),
+        'components-2': resolve(__dirname, 'src/components-2.html'),
       }
     }
   },
