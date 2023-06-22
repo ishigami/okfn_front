@@ -14,7 +14,7 @@
   }
 
   .content {
-    @apply col-start-2 col-span-10 lg:col-start-2 lg:col-span-4;
+    @apply col-start-2 col-span-10 lg:col-start-2 lg:col-span-4 2xl:col-start-1;
 
     text-shadow: 0 4px 4px rgba(0,0,0,0.25);
   }
@@ -41,7 +41,7 @@
 
   &.-right {
     .content {
-      @apply col-start-2 col-span-10 lg:col-start-8 lg:col-span-4 text-right;
+      @apply col-start-2 col-span-10 lg:col-start-8 lg:col-span-4 2xl:col-start-9 text-right;
     }
   }
 
