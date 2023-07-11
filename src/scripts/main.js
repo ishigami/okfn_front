@@ -59,7 +59,7 @@ const okfnMain = {
         const type = thisModal.attr('data-modal-type') || null; // warning
 
         if (!$('#modal-message').length) {
-          $('body').append($('<div id="modal-message" class="hidden w-full md:max-w-xl lg:max-w-3xl text-h4"> <strong class="flex items-center pr-14 -mt-20 mb-10 text-h2 uppercase"> <img src="/images/icons/warning.svg" alt="Alert" id="modal-message__icon"> <span class="block ml-2" id="modal-message__title"></span> </strong> <p id="modal-message__description"></p> </div>'));
+          $('body').append($('<div id="modal-message" class="hidden w-full md:max-w-xl lg:max-w-3xl text-h4"> <strong class="flex items-center pr-14 -mt-20 mb-10 text-h2 uppercase"> <img src="images/icons/warning.svg" alt="Alert" id="modal-message__icon"> <span class="block ml-2" id="modal-message__title"></span> </strong> <p id="modal-message__description"></p> </div>'));
           sleep(500);
         }
 
@@ -70,7 +70,7 @@ const okfnMain = {
         if (type) {
           $('#modal-message__description').addClass('text-okfn-lg');
           $('#modal-message__icon').show();
-          $('#modal-message__icon').attr('src', '/images/icons/' + type + '.svg');
+          $('#modal-message__icon').attr('src', 'images/icons/' + type + '.svg');
         }
 
         $('#modal-message').modal();
